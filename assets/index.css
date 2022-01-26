@@ -258,14 +258,10 @@ form button i{
         box-shadow: none;
         pointer-events: none;
     }
-    .dropdown-link{
-        pointer-events: none;
-    }
     .dropdown-link > a{
         padding-left: 0;
         width: max-content;
     }
-    
     .dropdown-link:not(:last-child){
         border-bottom: none;
     }
@@ -284,9 +280,6 @@ form button i{
         transform: translateY(0);
         height: max-content;
         transition: .2s ease-in-out;
-    }
-    .nav-link:hover > .dropdown-link {
-        pointer-events: auto;
     }
     .wallet-dropdown > p{
         margin: .5rem 0;
