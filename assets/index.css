@@ -667,7 +667,7 @@ table th {
       color: white;
   }
   footer > div{
-      padding: 4rem 0 2rem 4rem;
+      padding: 4rem 4rem 2rem 4rem;
   }
   .foot-top{
       display: grid;
@@ -684,7 +684,6 @@ table th {
   .foot-top > div > p{
       margin-top: .8rem;
   }
-
   footer form input[type="text"],
   footer form input[type="submit"]{
       outline: none;
@@ -718,6 +717,7 @@ footer form input[type='submit']:hover{
 }
 .foot-bottom{
     position: relative;
+    padding: 4rem 1rem 2rem 1rem;
 }
 .foot-bottom > div{
     display: flex;
@@ -746,6 +746,7 @@ footer form input[type='submit']:hover{
         align-items: center;
     }
     .foot-bottom{
-        padding: 4rem 0 2rem 0;
+        padding: 2rem 0 2rem 0;
+        text-align: center;
     }
 }
