@@ -20,10 +20,31 @@ hamburgerContainer.addEventListener('click', () => {
     }
 })
 
-    outside.addEventListener('click', () => {
-            mainNavbar.style.right = '';
-            outside.style.zIndex = ''
-            outside.style.opacity = '0'
-            openList.classList.remove('opened')  
-            menuOpen = false  
-    })
+outside.addEventListener('click', () => {
+        mainNavbar.style.right = '';
+        outside.style.zIndex = ''
+        outside.style.opacity = '0'
+        openList.classList.remove('opened')  
+        menuOpen = false  
+})
+
+let aboutOpenner = document.getElementById('about-openner-acc')
+let detailOpenner= document.getElementById('detail-openner-acc')
+let offersOpenner= document.getElementById('offers-openner-acc')
+
+let accordionDetailAbout = document.getElementById('acc-detail-about')
+let accordionDetailDetail = document.getElementById('acc-detail-detail')
+let accordionDetailOffers= document.getElementById('acc-detail-offers')
+
+
+
+
+aboutOpenner.addEventListener('click', () => {
+    accordionDetailAbout.classList.toggle('show-accordion')
+})
+detailOpenner.addEventListener('click', () => {
+    accordionDetailDetail.classList.toggle('hide-accordion')
+})
+offersOpenner.addEventListener('click', () => {
+    accordionDetailOffers.classList.toggle('hide-accordion')
+})
