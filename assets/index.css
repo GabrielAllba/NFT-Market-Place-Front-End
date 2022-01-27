@@ -30,6 +30,9 @@ p{
 h1{
     font-family: 'Poppins-Bold';
 }
+h2{
+    font-family: 'Poppins-Bold';
+}
 li{
     list-style: none;
 }
@@ -445,7 +448,7 @@ form button i{
     width:45%;;
     height: max-content;
 }
-@media only screen and (max-width: 1260px) {
+@media only screen and (max-width: 1270px) {
     .price-desc > div:last-child{
         width:100%;;
         height: max-content;
@@ -569,3 +572,81 @@ table th {
     padding: 8px;
   }
   
+
+  /* SIMILAR COLLECTIONS*/
+  #similar-page{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2rem;
+    }
+    .sim-image-container > img{
+        max-width: 100%;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .sim-image-container{
+        max-width: 100%;
+        
+    }
+    .similar-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+    
+    .similar-item{
+        border: 1px solid rgb(221, 221, 221);
+        border-radius: 10px;
+        transition: .2s ease-in-out;
+    }
+    .sim-description,
+    .sim-item-price-title{
+      padding: .5rem 1rem;
+      display: flex;
+      align-items: center;
+  }
+  .sim-item-price-title{
+      padding-bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  .sim-item-price-title > div{
+      display: flex;
+      align-items: center;
+  }
+  .sim-item-price-title > div > i{
+      margin-right: .2rem;
+  }
+
+  .sim-description > div:not(:last-child){
+      margin-right: .6rem;
+  }
+  .sim-description > div > p{
+      font-size: .8rem;
+  }
+  .sim-description > div > strong{
+      font-size: .8rem;
+  }
+  .sim-description > div > img{
+      border-radius: 50%;
+      max-width: 2rem;
+  }
+  .similar-item:hover{
+      transform: translateY(-2%);
+      transition: .2s ease-in-out;
+  }
+  strong{
+      font-family: 'Poppins-Bold';
+  }
+
+  @media only screen and (max-width: 768px) {
+      .similar-content{
+          grid-template-columns: 1fr 1fr; 
+        }
+    }
+    @media only screen and (max-width: 576px) {
+        .similar-content{
+          grid-template-columns: 1fr; 
+      }
+  }
