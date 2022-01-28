@@ -926,7 +926,8 @@ footer form input[type='submit']:hover{
     display: grid;
     grid-template-columns: max-content 1fr;
 }
-.filter-page{
+.filter-page,
+.filter-page-2{
     position: sticky;
     position: -webkit-sticky;
     top: 0;
@@ -934,6 +935,7 @@ footer form input[type='submit']:hover{
     height: 100vh;
     border-right: 1px solid rgb(228, 228, 228);
     overflow: auto;
+    background: white;
 }
 .filter-page > div > ul{
     padding: 0;
@@ -946,13 +948,14 @@ footer form input[type='submit']:hover{
     border-bottom: 1px solid rgb(228, 228, 228);
 }
 .filter-page > div > ul > .accordion-container > .accordion-detail{
-    background-color: #f9ffff;
+    background-color: #f7ffff;
     padding: 1rem;
 }
 #acc-detail-filter{
     display: flex;
 }
-#filter-openner-acc > p{
+#filter-openner-acc > p,
+#filter-openner-2-acc > p{
     color: rgb(56, 148, 209);
 }
 label{
@@ -969,14 +972,23 @@ label{
 }
 
 @media only screen and (max-width: 768px) {
-    .filter-page{
-        display: none;
-    }   
+    .filter-page,
+    .filter-page-2{
+        height: max-content;
+        overflow-y: auto;
+    }  
     .account-collection-content{
         grid-template-columns: 1fr;
+        height: max-content;
     }
 }
 
 .overall-accordion > i{
     margin-left: 3rem;
 }
+.switch-2{
+    display: none;
+    border-right: 1px solid rgb(228, 228, 228);
+}
+
+/* ACTIVITY */
