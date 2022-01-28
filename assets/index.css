@@ -573,6 +573,7 @@ form button i{
 }
 .attributes-detail{
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .about-product-detail,
 .attributes-detail{
