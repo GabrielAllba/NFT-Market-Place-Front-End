@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>NFT Marketplace - Home Page</title>
+            <link rel="shortcut icon" href="">
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="./assets/css/index.css">
+
+            <!-- Google Fonts-->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <!-- Font Awesome Icon -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </head>
+    <body>
+        <div class="container">
+            <nav class="section-container"> 
+                <div>
+                    <img src="./assets/img/opensea.svg" alt="">
+                    <h1>NFTroops</h1>
+                </div>
+                <form action="" class="" id="search-form">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                    <input type="text" placeholder="Search..." name="search" id="search">
+                </form>
+                <ul id="main-navbar">
+                    <li class='nav-link'>
+                        <a href="javascript:void(0);">
+                            Explore
+                            <i class="fas fa-sort-down"></i>
+                        </a>
+                        <ul class="dropdown">
+                            <p style="color: grey; border: 1px solid rgb(228, 228, 228); border-radius: 5px;">  
+                                <strong style="color:rgb(51, 130, 204)">Support</strong> them with buy their NFT.
+                            </p>
+                            <li class="dropdown-link">
+                                <a href=""><i class="fas fa-palette" style="color: orange"></i>All Category</a>
+                            </li>
+                            <li class="dropdown-link"><a href=""><i class="fas fa-palette" style="color: red"></i>Art</a>
+                            </li>
+                            <li class="dropdown-link">
+                                <a href=""><i class="fas fa-palette" style="color: rgb(81, 206, 189)"></i>Sport</a>
+                            </li>
+                            <li class="dropdown-link">
+                                <a href=""><i class="fas fa-palette"></i>Abstract</a>
+                            </li>
+                        </ul>
+                    </li class='nav-link'>
+                    
+                    <li class='nav-link'>
+                        <a href="https://www.youtube.com" target="_blank">About</a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="">Register</a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="">Login</a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="javascript:void(0)"> 
+                            Wallet
+                            <i class="fas fa-sort-down"></i>
+                        </a>
+                        <ul class="dropdown wallet-dropdown">
+                            <p style="color: grey; border: 1px solid rgb(228, 228, 228); border-radius: 5px;">Connect with one of our  
+                                <strong style="color:rgb(51, 130, 204)">wallet</strong> providers or create a new one.
+                            </p>
+                            <li class="dropdown-link">
+                                <a href=""><img src="./assets/img/metamask.svg" alt=""> MetaMask</a>
+                            </li>
+                            <li class="dropdown-link"><a href=""><img src="./assets/img/walletconnect-alternative.webp" alt=""> WalletConnect</a>
+                            </li>
+                            <li class="dropdown-link">
+                                <a href=""><img src="./assets/img/fortmatic-alternative.webp"/>Fortmatic</a>
+                            </li>
+                            <li class="dropdown-link">
+                                <a href=""><img src="./assets/img/venly.svg" alt=""> Venly</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="hamburger-container">
+                    <div id="open-list"></div>
+                </button>
+            </nav>
+
+            <section class="section-container" id="detail-page">
+                <div class="product-container">
+                    <div class="card product-card">
+                        <div class="image">
+                            <img src="./assets/img/nft.jpg" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="card desc-card">
+                        <div class="title">
+                            <h2>Product Name</h2>
+                            <div class="tag">
+                                <a href="">Art</a>
+                                <a href="">Sport</a>
+                                <a href="">Fantasy</a>
+                            </div>
+                        </div>
+                        <div class="creator-profile">
+                            <div class="creator-first">
+                                <div>
+                                    <img src="https://randomuser.me/api/portraits/men/5.jpg" alt="">
+                                </div>
+                                <div class="creator-desc">
+                                    <a href="">Gabriel Allba</a>
+                                    <p>creator</p>
+                                </div>
+                            </div>
+                            <div class="creator-socmed">
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                        <div class="price-desc">
+                            <div>
+                                <div class="sale-ends">
+                                    <p>Sale ends July 22, 2022 at 10:02 am GMT+7</p>
+                                </div>
+                                <div class="min-bid">
+                                    <p>Current Price</p>
+                                    <div class="prod-price">
+                                        <i class="fab fa-ethereum"></i>
+                                        <p>6</p><span>($14,780.28)</span>
+                                    </div>
+                                    <button>
+                                        Make Offers
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="desc-nft-box">
+                                <ul>
+                                    <li class="accordion-container">
+                                        <div class="accordion-box" id="about-openner-acc">
+                                            <p>About Gabriel Allba</p>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                        <div class="accordion-detail" id="acc-detail-about">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis recusandae sapiente odio, magnam maiores accusamus voluptas quasi tenetur non ad aperiam veniam iure ullam nihil laboriosam perspiciatis dicta totam a.
+                                        </div>
+                                    </li>
+                                    <li class="accordion-container">
+                                        <div class="accordion-box" id="detail-openner-acc">
+                                            <p>Detail</p>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                        <div class="accordion-detail acc-detail-class" id="acc-detail-detail">
+                                            <div>
+                                                <p>Contact Address</p>
+                                                <p>980kjasdklfj9</p>
+                                            </div>
+                                            <div>
+                                                <p>Token ID</p>
+                                                <p>89789</p>
+                                            </div>
+                                            <div>
+                                                <p>Blockchain</p>
+                                                <p>Ethereum</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="detail-2-container">
+                    <div class="card desc-card">
+                        <div class="product-card attribute-card">
+                            <div class="accordion-box attribute-openner" id="attribute-openners">
+                                <p>Attributes</p>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-detail attributes-detail" id="acc-detail-attributes">
+                                    <div class="attributes-container">
+                                        <p>Background</p>
+                                        <strong>Red</strong>
+                                    </div>
+                                    <div class="attributes-container">
+                                        <p>Weapon</p>
+                                        <strong>None</strong>
+                                    </div>
+                                    <div class="attributes-container">
+                                        <p>Clothes</p>
+                                        <strong>None</strong>
+                                    </div>
+                                    <div class="attributes-container">
+                                        <p>Head</p>
+                                        <strong>Helmet</strong>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card desc-card">
+                        <div class="product-card attribute-card">
+                            <div class="accordion-box about-product-openner" id="about-product-openners">
+                                <p>About Product Name</p>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-detail about-product-detail" id="acc-detail-product">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum saepe doloremque repudiandae deleniti minus alias nemo blanditiis sapiente placeat 
+                                    est optio et, fugiat impedit laudantium illo vero, dolor, adipisci minima!</p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="offer-desc" style='margin-bottom: 2rem'>
+                    <div id="desc-nft-box">
+                        <ul>
+                            <li class="accordion-container">
+                                <div class="accordion-box" id="offers-openner-acc">
+                                    <p>Offers</p>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="accordion-detail acc-detail-offer" id="acc-detail-offers">
+                                    <table>
+                                        <tr>
+                                            <th>From</th>
+                                            <th>USD Price</th>
+                                            <th>ETH Price</th>
+                                            <th>Floor Difference</th>
+                                            <th>Expired In</th>
+                                        </tr>
+                                        <tr>
+                                            <td>test</td>
+                                            <td>test</td>
+                                            <td>test</td>
+                                            <td>test</td>
+                                            <td>test</td>
+                                        </tr>
+                                        <tr>
+                                            <td>test</td>
+                                            <td>test</td>
+                                            <td>test</td>
+                                            <td>test</td>
+                                            <td>test</td>
+                                        </tr>
+                                        <tr>
+                                            <td>test</td>
+                                            <td>test</td>
+                                            <td>test</td>
+                                            <td>test</td>
+                                            <td>test</td>
+                                        </tr>
+                                        <tr>
+                                            <td>test</td>
+                                            <td>test</td>
+                                            <td>test</td>
+                                            <td>test</td>
+                                            <td>test</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-container" id="similar-page">
+                <div class="similar-title">
+                    <h2>SIMILAR ITEM</h2>
+                </div>
+                <div class="similar-content">
+                    <a href="" class="similar-item">
+                        <div class="sim-image-container">
+                            <img src="./assets/img/nft.jpg" alt="">
+                        </div>
+                        <div class="sim-item-price-title">
+                            <strong>GODZILLA IN A NUTSHELL</strong>
+                            <div>
+                                <i class="fab fa-ethereum"></i>
+                                <p>5</p>
+                            </div>
+                        </div>
+                        <div class="sim-description">
+                            <div class="sim-image-container ">
+                                <img src="https://randomuser.me/api/portraits/men/5.jpg"" alt="">
+                            </div>
+                            <div>
+                                <p>Creator</p>
+                                <strong>Gabriel Allba </strong>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="similar-item">
+                        <div class="sim-image-container">
+                            <img src="./assets/img/nft.jpg" alt="">
+                        </div>
+                        <div class="sim-item-price-title">
+                            <strong>GODZILLA IN A NUTSHELL</strong>
+                            <div>
+                                <i class="fab fa-ethereum"></i>
+                                <p>5</p>
+                            </div>
+                        </div>
+                        <div class="sim-description">
+                            <div class="sim-image-container ">
+                                <img src="https://randomuser.me/api/portraits/men/5.jpg"" alt="">
+                            </div>
+                            <div>
+                                <p>Creator</p>
+                                <strong>Gabriel Allba </strong>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="similar-item">
+                        <div class="sim-image-container">
+                            <img src="./assets/img/nft.jpg" alt="">
+                        </div>
+                        <div class="sim-item-price-title">
+                            <strong>GODZILLA IN A NUTSHELL</strong>
+                            <div>
+                                <i class="fab fa-ethereum"></i>
+                                <p>5</p>
+                            </div>
+                        </div>
+                        <div class="sim-description">
+                            <div class="sim-image-container ">
+                                <img src="https://randomuser.me/api/portraits/men/5.jpg"" alt="">
+                            </div>
+                            <div>
+                                <p>Creator</p>
+                                <strong>Gabriel Allba </strong>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="similar-item">
+                        <div class="sim-image-container">
+                            <img src="./assets/img/nft.jpg" alt="">
+                        </div>
+                        <div class="sim-item-price-title">
+                            <strong>GODZILLA IN A NUTSHELL</strong>
+                            <div>
+                                <i class="fab fa-ethereum"></i>
+                                <p>5</p>
+                            </div>
+                        </div>
+                        <div class="sim-description">
+                            <div class="sim-image-container ">
+                                <img src="https://randomuser.me/api/portraits/men/5.jpg"" alt="">
+                            </div>
+                            <div>
+                                <p>Creator</p>
+                                <strong>Gabriel Allba </strong>
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+            </section>
+
+            <footer class="section-container">
+                <div class="foot-top">
+                    <div>
+                        <strong>Resources</strong>
+                        <ul>
+                            <li>
+                                <a href="">About</a>
+                            </li>
+                            <li>
+                                <a href="">Help Center</a>
+                            </li>
+                            <li>
+                                <a href="">Document</a>
+                            </li>
+                            <li>
+                                <a href="">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <strong>Social Media</strong>
+                        <ul>
+                            <li>
+                                <a href="">Instagram</a>
+                            </li>
+                            <li>
+                                <a href="">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="">Facebook</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <strong>NFTroops</strong>
+                        <ul>
+                            <li>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                                    elit. Numquam, reiciendis sunt! Fuga suscipit, aut earum autem similique 
+                                    corrupti illo id necessitatibus? Asperiores ex minima ad cupiditate, 
+                                    quibusdam dolore animi nam.</p>
+                            </li>
+                        </ul>
+                        <form action="">
+                            <input type="text" placeholder="Input your email to subsribe">
+                            <input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+                <div class="foot-bottom">
+                    <div>
+                        <p>&copy; 2022 All right reserved</p>
+                        <p>made with love by Tim Berkah Jaya Elektronik</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="outside"></div>
+
+        <script src="./assets/js/index.js"></script>
+    </body>
+</html>

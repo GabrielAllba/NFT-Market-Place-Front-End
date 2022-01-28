@@ -1,18 +1,18 @@
 @font-face {
     font-family: 'Poppins-Regular';
-    src: url('./font/Poppins-Regular.ttf');
+    src: url('../font/Poppins-Regular.ttf');
 }
 @font-face {
     font-family:'Poppins-Bold' ;
-    src: url('./font/Poppins-Bold.ttf');
+    src: url('../font/Poppins-Bold.ttf');
 }
 @font-face {
     font-family: 'Montserrat-Regular';
-    src: url('./font/Montserrat-Regular.ttf');
+    src: url('../font/Montserrat-Regular.ttf');
 }
 @font-face {
     font-family: 'Montserrat-Bold';
-    src: url('./font/Montserrat-Bold.ttf');
+    src: url('../font/Montserrat-Bold.ttf');
 }
 body{
     padding: 0;
@@ -691,7 +691,11 @@ table th {
   strong{
       font-family: 'Montserrat-Bold';
   }
-
+  @media only screen and (max-width: 1024px){
+      .similar-content{
+          grid-template-columns: 1fr 1fr 1fr;
+      }
+  }
   @media only screen and (max-width: 768px) {
       .similar-content{
           grid-template-columns: 1fr 1fr; 
@@ -800,5 +804,171 @@ footer form input[type='submit']:hover{
     .foot-bottom{
         padding: 2rem 0 2rem 0;
         text-align: center;
+    }
+}
+
+/* ACCOUNT COLLECTION */
+#account-collection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 34rem;
+    border-bottom: 1px solid rgb(223, 223, 223);
+    text-align: center;
+}
+#account-collection > div:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 34rem;
+    text-align: center;
+}
+
+.account-details > div:not(:last-child){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: start;
+}
+.account-details > div:not(:last-child) > div{
+    padding: .5rem 2rem .5rem 1rem;
+    margin: .3rem;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 10px;
+}
+.d-flex{
+    display: flex;
+}
+.d-flex > i{
+    margin-right: .2rem;
+}
+.custom-detail-account{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+
+}
+.account-coll-socmed ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-bottom: .5rem;   
+}
+.account-coll-socmed > ul > li{
+    margin: .3rem;
+    background: rgb(58, 57, 63);
+    border-radius: 10px;
+    transition: .2s ease-in-out;
+}
+.account-coll-socmed > ul > li:hover{
+    transform: translateY(-5%);
+    transition: .2s ease-in-out;
+}
+
+.account-coll-socmed > ul > li > a >i{
+    font-size: 1.2rem;
+    padding: .8rem;
+    color: white;
+}
+@media only screen and (max-width: 576px){
+    .account-details > div:not(:last-child) > div{
+        width: 60%;
+        text-align: center;
+    }
+    .d-flex{
+        justify-content: center;
+    }
+    .account-profile{
+        margin-top: 1rem;
+    }
+}
+
+.custom-detail-account > p{
+    max-width: 70%;
+}
+.items-activity{
+    display: flex;
+}
+.items-act-cont{
+    display: flex;
+    padding-bottom: 1rem;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    margin: 0 .5rem;
+    
+}
+
+.items-activity > div{
+    outline: none;
+    border: none;
+}
+.items-activity > div > i{
+    margin-right: .3rem;
+}
+
+.active::after{
+    content: "";
+    position: absolute ;
+    width: 100% ;
+    height: 3px ;
+    bottom: -2px ;
+    left: 0 ;
+    background-color: rgb(255, 64, 96) ;
+}
+.account-collection-content{
+    display: grid;
+    grid-template-columns: .3fr 1fr;
+}
+.filter-page{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 4rem;
+    left: 0;
+    height: 100vh;
+    border-right: 1px solid rgb(228, 228, 228);
+    overflow: auto;
+}
+.filter-page > div > ul{
+    padding: 0;
+}
+.filter-page > #desc-nft-box > ul > .accordion-container{
+    padding: 0;
+}
+.filter-page > div > ul > .accordion-container > .accordion-box{
+    padding: 1rem;
+    border-bottom: 1px solid rgb(228, 228, 228);
+}
+.filter-page > div > ul > .accordion-container > .accordion-detail{
+    background-color: #f9ffff;
+    padding: 1rem;
+}
+#acc-detail-filter{
+    display: flex;
+}
+#filter-openner-acc > p{
+    color: rgb(56, 148, 209);
+}
+label{
+    display: flex;
+    align-items: center;
+}
+.checkbox-acc{
+    display: flex;
+    justify-content: flex-start !important;
+    margin-bottom: .5rem;
+}
+.checkbox-acc > input{
+    width: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .filter-page{
+        display: none;
+    }   
+    .account-collection-content{
+        grid-template-columns: 1fr;
     }
 }

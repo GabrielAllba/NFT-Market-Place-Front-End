@@ -59,3 +59,7 @@ attributesOpenner.addEventListener('click', () =>{
 aboutProductOpenner.addEventListener('click', () => {
     accordionDetailProduct.classList.toggle('hide-accordion')
 })
+
+
+
+
