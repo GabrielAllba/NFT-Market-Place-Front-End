@@ -691,6 +691,9 @@ table th {
   strong{
       font-family: 'Montserrat-Bold';
   }
+  .hide-filter{
+      grid-template-columns: max-content 1fr;
+  }
   @media only screen and (max-width: 1024px){
       .similar-content{
           grid-template-columns: 1fr 1fr 1fr;
@@ -698,12 +701,12 @@ table th {
   }
   @media only screen and (max-width: 768px) {
       .similar-content{
-          grid-template-columns: 1fr 1fr; 
+          grid-template-columns: 1fr 1fr ; 
         }
     }
     @media only screen and (max-width: 576px) {
         .similar-content{
-          grid-template-columns: 1fr; 
+          grid-template-columns: 1fr ; 
       }
   }
 
@@ -822,8 +825,9 @@ footer form input[type='submit']:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 34rem;
+    min-height: 20rem;
     text-align: center;
+    padding-top: 3rem;
 }
 
 .account-details > div:not(:last-child){
@@ -920,12 +924,12 @@ footer form input[type='submit']:hover{
 }
 .account-collection-content{
     display: grid;
-    grid-template-columns: .3fr 1fr;
+    grid-template-columns: max-content 1fr;
 }
 .filter-page{
     position: sticky;
     position: -webkit-sticky;
-    top: 4rem;
+    top: 0;
     left: 0;
     height: 100vh;
     border-right: 1px solid rgb(228, 228, 228);
@@ -971,4 +975,8 @@ label{
     .account-collection-content{
         grid-template-columns: 1fr;
     }
+}
+
+.overall-accordion > i{
+    margin-left: 3rem;
 }
