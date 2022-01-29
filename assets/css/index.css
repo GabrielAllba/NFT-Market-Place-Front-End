@@ -519,7 +519,7 @@ form button i{
     padding: 0;
 }
 #desc-nft-box > ul > li{
-    padding: 1rem;
+    padding: .5rem;
 }
 #desc-nft-box > ul > li:not(:last-child){
     border-bottom: 1px solid rgb(220, 220, 220);
@@ -625,7 +625,8 @@ table th {
       }
   }
   /* SIMILAR COLLECTIONS*/
-  #similar-page{
+  #similar-page,
+  #activity-acc-col-page{
       display: flex;
       flex-direction: column;
       margin-bottom: 2rem;
@@ -943,13 +944,18 @@ footer form input[type='submit']:hover{
 .filter-page > #desc-nft-box > ul > .accordion-container{
     padding: 0;
 }
-.filter-page > div > ul > .accordion-container > .accordion-box{
+.filter-page > div > ul > .accordion-container > .accordion-box,
+.filter-page-2 > div > ul > .accordion-container > .accordion-box{
     padding: 1rem;
     border-bottom: 1px solid rgb(228, 228, 228);
 }
 .filter-page > div > ul > .accordion-container > .accordion-detail{
-    background-color: #f7ffff;
+    background-color: #ffffff;
     padding: 1rem;
+    padding-left: .2rem;
+}
+.filter-page-2 > div > ul > .accordion-container >.accordion-box{
+    border-bottom: none;
 }
 #acc-detail-filter{
     display: flex;
@@ -958,25 +964,20 @@ footer form input[type='submit']:hover{
 #filter-openner-2-acc > p{
     color: rgb(56, 148, 209);
 }
-label{
-    display: flex;
-    align-items: center;
-}
+
 .checkbox-acc{
     display: flex;
-    justify-content: flex-start !important;
-    margin-bottom: .5rem;
-}
-.checkbox-acc > input{
-    width: 2rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 576px) {
     .filter-page,
     .filter-page-2{
         height: 100vh;
         overflow-y:visible
     }  
+    .filter-page-2{
+        height: max-content;
+    }
     .account-collection-content{
         grid-template-columns: 1fr;
         height: max-content;
@@ -984,11 +985,44 @@ label{
 }
 
 .overall-accordion > i{
-    margin-left: 3rem;
+    margin-left: 5rem;
 }
 .switch-2{
     display: none;
     border-right: 1px solid rgb(228, 228, 228);
 }
-
+.fa-chevron-left{
+    margin-left: 1rem;
+}
 /* ACTIVITY */
+#activity-acc-col-page{
+    overflow-x: auto;
+}
+#activity-acc-col-page > div >div> ul > li > div{
+    display: flex;
+}
+
+#et-acc-detail > button,
+.checkbox-acc > button{
+    font-family: 'Montserrat-regular';
+    padding: .5rem 1rem;
+    border: 1px solid rgb(228, 228, 228);
+    margin: .3rem;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: white;
+    width: 100%;
+    transition: .2s ease-in-out;
+    text-align: start;
+}
+#et-acc-detail > button:hover,
+.checkbox-acc > button:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    transition: .2s ease-in-out;
+}
+
+.filter-active{
+    background-color: rgb(55, 144, 226) !important;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
