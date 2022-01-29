@@ -744,7 +744,7 @@
                             <li class="accordion-container">
                                 <div class="accordion-box" id="filter-openner-2-acc">
                                     <p class="hide-opt-2">Filter</p>
-                                    <i class="fas fa-chevron-left"></i>
+                                    <i class="fas fa-chevron-left fa-chevron-left-2"></i>
                                 </div>
                             </li>
                             <li class="accordion-container hide-opt-2">
@@ -1008,10 +1008,12 @@
                 for(let i = 0; i < all.length; i++){
                     all[i].classList.toggle('hide-accordion')
                     if(all[i].classList.contains('hide-accordion')){
+                        filterpage.style.height = 'max-content'
                         collTemp.classList.add('hide-filter')
                         chevLeft.style.transform = 'rotateY(180deg)'
                     }
                     else{
+                        filterpage.style.height = ''
                         collTemp.classList.remove('hide-filter')
                         chevLeft.style.transform = ''
                     }
@@ -1020,18 +1022,21 @@
             
             let filterOpenner2 = document.getElementById('filter-openner-2-acc')
             let filterpage2 = document.getElementsByClassName('filter-page-2')[0]
-
+            let chevLeft2 = document.getElementsByClassName('fa-chevron-left-2')[0];
+            
             filterOpenner2.addEventListener('click', ()=>{
                 let all = filterpage2.querySelectorAll('.hide-opt-2');
                 for(let i = 0; i < all.length; i++){
                     all[i].classList.toggle('hide-accordion')
                     if(all[i].classList.contains('hide-accordion')){
+                        filterpage2.style.height = 'max-content'
                         collTemp.classList.add('hide-filter')
-                        chevLeft.style.transform = 'rotateY(180deg)'
+                        chevLeft2.style.transform = 'rotateY(180deg)'
                     }
                     else{
+                        filterpage2.style.height = ''
                         collTemp.classList.remove('hide-filter')
-                        chevLeft.style.transform = ''
+                        chevLeft2.style.transform = ''
                     }
                 }
             })

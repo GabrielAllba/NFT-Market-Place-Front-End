@@ -593,15 +593,15 @@ table{
     width: 100%;
     overflow-x: auto;
   }
-.offer-desc::-webkit-scrollbar{
-    width: 10px;
+::-webkit-scrollbar{
+    width: 4px;
     height: 7px;
 }
-.offer-desc::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: #ffffff; 
 }
 
-.offer-desc::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: rgb(206, 206, 206); 
     border-radius: 30px;
     margin-bottom: .5rem;
@@ -974,8 +974,8 @@ label{
 @media only screen and (max-width: 768px) {
     .filter-page,
     .filter-page-2{
-        height: max-content;
-        overflow-y: auto;
+        height: 100vh;
+        overflow-y:visible
     }  
     .account-collection-content{
         grid-template-columns: 1fr;
