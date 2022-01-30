@@ -1045,3 +1045,28 @@ footer form input[type='submit']:hover{
     color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
+#activity-offers-table  a:hover{
+    text-decoration:underline rgb(181, 181, 181);
+
+}
+#activity-offers-table td > div,
+#activity-offers-table td > a > div
+{
+    display: flex;
+    align-items: center;
+}
+#activity-offers-table td > div > img{
+    width: 2rem;
+}
+#activity-offers-table td > a > div > img{
+    width: 2rem;
+    margin-right: .5rem;
+    height: auto;
+}
+
+.show-filter-cat{
+    display: block;
+}
+.hide-filter-cat{
+    display: none;
+}
