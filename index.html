@@ -176,7 +176,7 @@
 
                             <li class="accordion-container">
                                 <div class="accordion-box" id="filter-openner-acc">
-                                    <p >Filter</p>
+                                    <p>Filter</p>
                                     <i class="fas fa-chevron-left fa-chevron-left-1"></i>
                                 </div>
                             </li>
@@ -1042,11 +1042,11 @@
             let chevLeft1 = document.getElementsByClassName('fa-chevron-left-1')[0];
             let filterpage = document.getElementsByClassName('filter-page')[0]
             
+            let hideopt1 = filterpage.querySelectorAll('.hide-opt');
             filterOpenner.addEventListener('click', ()=>{
-                let all = filterpage.querySelectorAll('.hide-opt');
-                for(let i = 0; i < all.length; i++){
-                    all[i].classList.toggle('hide-accordion')
-                    if(all[i].classList.contains('hide-accordion')){
+                for(let i = 0; i < hideopt1.length; i++){
+                    hideopt1[i].classList.toggle('hide-accordion')
+                    if(hideopt1[i].classList.contains('hide-accordion')){
                         filterpage.style.height = 'max-content'
                         collTemp.classList.add('hide-filter')
                         chevLeft1.style.transform = 'rotateY(180deg)'
@@ -1062,15 +1062,16 @@
             let filterOpenner2 = document.getElementById('filter-openner-2-acc')
             let filterpage2 = document.getElementsByClassName('filter-page-2')[0]
             let chevLeft2 = document.getElementsByClassName('fa-chevron-left-2')[0];
+            let hideopt2 = filterpage2.querySelectorAll('.hide-opt-2');
             
             filterOpenner2.addEventListener('click', ()=>{
-                let all = filterpage2.querySelectorAll('.hide-opt-2');
-                for(let i = 0; i < all.length; i++){
-                    all[i].classList.toggle('hide-accordion')
-                    if(all[i].classList.contains('hide-accordion')){
+                for(let i = 0; i < hideopt2.length; i++){
+                    hideopt2[i].classList.toggle('hide-accordion')
+                    if(hideopt2[i].classList.contains('hide-accordion')){
                         filterpage2.style.height = 'max-content'
                         collTemp.classList.add('hide-filter')
                         chevLeft2.style.transform = 'rotateY(180deg)'
+                        
                     }
                     else{
                         filterpage2.style.height = ''
@@ -1080,6 +1081,16 @@
                 }
             })
 
+            if(screen.availWidth < 576){
+                for(let m = 0; m < hideopt1.length; m++){
+                    hideopt1[m].classList.add('hide-accordion')
+                    filterpage.style.height = 'max-content' 
+                }
+                for(let x = 0; x < hideopt2.length; x++){
+                    hideopt2[x].classList.add('hide-accordion')
+                }
+            }
+        
             let overallAccordion = document.getElementsByClassName('overall-accordion')
             let accordionDetail = document.getElementsByClassName('accordion-detail')
             for(let i =0; i < overallAccordion.length; i++){
