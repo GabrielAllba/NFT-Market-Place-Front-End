@@ -85,7 +85,7 @@ nav div img{
     color: black;
     transition: .2s ease-in-out;
 }
-#main-navbar > li > a:hover >i{
+#main-navbar > li > a:hover > svg{
     transform: rotateX(180deg);
     transition: .2s ease-in-out;
     
@@ -108,7 +108,7 @@ form button{
     background: none;
     border: none;
 }
-form button i{
+form button svg{
     background: none;
 }
 .nav-link{
@@ -157,7 +157,7 @@ form button i{
     display: block;
     margin: .5rem;
 }
-.dropdown-link > a > i{
+.dropdown-link > a > svg{
     padding-right: .5rem;
 }
 .dropdown-link > a > img{
@@ -440,14 +440,16 @@ form button i{
 }
 .creator-socmed > a{
     margin: .2rem .1rem;
-    border: 1.5px solid rgb(230, 230, 230);
-    padding: .5rem;
+    padding: .2rem;
     display: flex;
     border-radius: 50%;
     flex-wrap: nowrap;
 }
-.creator-socmed > a >i {
-    font-size: 1.5rem;
+.creator-socmed > a >img{
+    width: 2rem;
+}
+svg{
+    width: 1.2rem;
 }
 
 .price-desc{
@@ -487,9 +489,9 @@ form button i{
     display: flex;
     align-items: center;
 }
-.prod-price > i{
-    margin-right: .5rem;
-    font-size: 2rem;
+.prod-price > img{
+    margin-right: .2rem;
+    width: 2rem;
 }
 .prod-price > p{
     font-size: 2rem;
@@ -505,6 +507,7 @@ form button i{
     border: none;
     padding: .5rem 2rem;
     color: white;
+    margin-top: .5rem;
     border-radius: 8px;
     cursor: pointer;
 }
@@ -667,7 +670,8 @@ table th {
       display: flex;
       align-items: center;
   }
-  .sim-item-price-title > div > i{
+  .sim-item-price-title > div > img{
+      width: 2rem;
       margin-right: .2rem;
   }
 
@@ -830,7 +834,9 @@ footer form input[type='submit']:hover{
     text-align: center;
     padding-top: 3rem;
 }
-
+#offers-openner-acc{
+    cursor: auto;
+}
 .account-details > div:not(:last-child){
     display: flex;
     flex-wrap: wrap;
@@ -838,13 +844,28 @@ footer form input[type='submit']:hover{
     text-align: start;
 }
 .account-details > div:not(:last-child) > div{
-    padding: .5rem 2rem .5rem 1rem;
+    padding: .5rem 2rem;
     margin: .3rem;
     border: 1px solid rgb(223, 223, 223);
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.account-details-item > p{
+    font-size: .8rem;
+    margin-bottom: .3rem;
+}
+.account-details-item > div > strong{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .d-flex{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 .d-flex > i{
     margin-right: .2rem;
@@ -862,8 +883,6 @@ footer form input[type='submit']:hover{
     margin-bottom: .5rem;   
 }
 .account-coll-socmed > ul > li{
-    margin: .3rem;
-    background: rgb(58, 57, 63);
     border-radius: 10px;
     transition: .2s ease-in-out;
 }
@@ -872,9 +891,9 @@ footer form input[type='submit']:hover{
     transition: .2s ease-in-out;
 }
 
-.account-coll-socmed > ul > li > a >i{
-    font-size: 1.2rem;
-    padding: .8rem;
+.account-coll-socmed > ul > li > a >img{
+    width: 2rem;
+    padding: .2rem;
     color: white;
 }
 @media only screen and (max-width: 576px){
@@ -984,7 +1003,7 @@ footer form input[type='submit']:hover{
     }
 }
 
-.overall-accordion > i{
+.overall-accordion > svg{
     margin-left: 5rem;
 }
 .switch-2{
