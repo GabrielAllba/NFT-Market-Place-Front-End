@@ -13,6 +13,7 @@
     </head>
     <body>
         <div class="container">
+            
             <nav class="section-container"> 
                 <div>
                     <a href="./index.html">
@@ -107,6 +108,7 @@
                     <div class="card desc-card">
                         <div class="title">
                             <h2>Product Name</h2>
+                            <p>Owned by <a href="./account-collection.html" style="color: rgb(139, 68, 206);">Jason Mamoa</a></p>
                             <div class="tag">
                                 <a href="">Art</a>
                                 <a href="">Sport</a>
@@ -158,7 +160,7 @@
                                                 <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                                               </svg>
                                         </div>
-                                        <div class="accordion-detail" id="acc-detail-about">
+                                        <div class="accordion-detail acc-detail-class" id="acc-detail-about">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis recusandae sapiente odio, magnam maiores accusamus voluptas quasi tenetur non ad aperiam veniam iure ullam nihil laboriosam perspiciatis dicta totam a.
                                         </div>
                                     </li>
@@ -169,7 +171,7 @@
                                                 <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                                               </svg>
                                         </div>
-                                        <div class="accordion-detail acc-detail-class" id="acc-detail-detail">
+                                        <div class="accordion-detail" id="acc-detail-detail">
                                             <div>
                                                 <p>Contact Address</p>
                                                 <p>980kjasdklfj9</p>
@@ -432,6 +434,81 @@
                 </div>
             </section>
 
+            <div class="make-offer-to-item-page">
+                <div class="items-title-buy">
+                    <h2 style="text-align: center;">Item Offers</h2>
+                </div>
+                <form class="items-detail">
+                    <div class="inner-items-detail">
+                        <strong>Price</strong>
+                        <div class="price-img">
+                            <img src="https://img.icons8.com/nolan/64/ethereum.png" style="width: 1.5rem;"/>
+                            <span>10</span>
+                        </div>
+                    </div>
+                    <div class="make-offer-desc">
+                        <strong style="margin-bottom: 1rem;">Make offers</strong>
+                        <div>
+                            <label for="input-price-item">
+                                <img src="https://img.icons8.com/nolan/64/ethereum.png" style="width: 1.5rem;"/>
+                                <p>ETH</p>
+                            </label>
+                            <input id="input-price-item" type="number" placeholder="Input price" required>
+                        </div>
+                    </div>
+                    <div class="wallet-balance">
+                        <div>
+                            <strong>Balance: </strong>
+                            <div class="price-img">
+                                <img src="https://img.icons8.com/nolan/64/ethereum.png" style="width: 1.5rem;"/>
+                                <p>50</p>
+                            </div>
+                        </div>
+                        <div style="margin-top: 1rem; display: flex; flex-direction: column; align-items: flex-start;">
+                            <strong>Offer Expiration</strong>
+                            <div style="margin-top: .5rem; display: flex; justify-content: space-between;width: 100%;">
+                                <div style="position: relative; width: 48%;">
+                                    <div class="offers-time-openner">
+                                        <p id="offers-time">Choose time</p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                          </svg>
+                                    </div>
+                                    <div class="time-container">
+                                        <button>1 Days</button>
+                                        <button>3 Days</button>
+                                        <button>7 Days</button>
+                                        <button>1 Month</button>
+                                    </div>
+                                </div>
+                                <div style="position: relative; width: 48%;">
+                                    <div class="" style="height: 100%;">
+                                        <input type="time" id="appt"  required>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="confirm-box">
+                        <div>
+                            <input type="checkbox" id="confirm-1" required>
+                            <label for="confirm-1">By checking this box, I acknowledge that this bundle contains an item that has not been reviewed or approved by NFTroops.</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="confirm-2" required>
+                            <label for="confirm-2">By checking this box, I agree to NFTroops's Terms of Service</label>
+                        </div>
+    
+                    </div>
+
+                    <div class="submit-outer">
+                        <button type="submit" class="cancel-inner">Cancel Offer</button>
+                        <button type="submit" class="submit-inner">Make Offer</button>
+                    </div>
+                </form>
+            </div>
+
             <footer class="section-container">
                 <div class="foot-top">
                     <div>
@@ -491,62 +568,7 @@
                 </div>
             </footer>
 
-            <div class="make-offer-to-item-page">
-                <div class="items-title-buy">
-                    <h2>Items Offers</h2>
-                </div>
-                <form class="items-detail">
-                    <div class="inner-items-detail">
-                        <strong>Price</strong>
-                        <div class="price-img">
-                            <img src="https://img.icons8.com/nolan/64/ethereum.png" style="width: 1.5rem;"/>
-                            <span>10</span>
-                        </div>
-                    </div>
-                    <div class="make-offer-desc">
-                        <strong style="margin-bottom: 1rem;">Make offers</strong>
-                        <div>
-                            <label for="input-price-item">
-                                <img src="https://img.icons8.com/nolan/64/ethereum.png" style="width: 1.5rem;"/>
-                                <p>ETH</p>
-                            </label>
-                            <input id="input-price-item" type="number" placeholder="Input price" required>
-                        </div>
-                    </div>
-                    <div class="wallet-balance">
-                        <div>
-                            <strong>Balance: </strong>
-                            <div class="price-img">
-                                <img src="https://img.icons8.com/nolan/64/ethereum.png" style="width: 1.5rem;"/>
-                                <p>50</p>
-                            </div>
-                        </div>
-                        <div style="margin-top: 1rem">
-                            <strong>Offer Expiration</strong>
-                            <div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="confirm-box">
-                        <div>
-                            <input type="checkbox" id="confirm-1" required>
-                            <label for="confirm-1">By checking this box, I acknowledge that this bundle contains an item that has not been reviewed or approved by NFTroops.</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="confirm-2" required>
-                            <label for="confirm-2">By checking this box, I agree to NFTroops's Terms of Service</label>
-                        </div>
-    
-                    </div>
-
-                    <div class="submit-outer">
-                        <button type="submit" class="cancel-inner">Cancel Offer</button>
-                        <button type="submit" class="submit-inner">Make Offer</button>
-                    </div>
-                </form>
-            </div>
+            
         </div>
         <div class="outside"></div>
         
@@ -574,6 +596,20 @@
                 outside.style.opacity = ''
                 outside.style.zIndex = ''
                 makeOfferToItemPage.classList.remove('open-modal')
+            })
+
+            let offerTime = document.getElementById('offers-time')
+            let timeContainer = document.getElementsByClassName('time-container')[0]
+            let offersTimeOpenner = document.getElementsByClassName('offers-time-openner')[0]        
+
+            for(let i = 0; i < timeContainer.children.length; i++){
+                timeContainer.children[i].addEventListener('click', () => {
+                    offerTime.innerHTML = timeContainer.children[i].innerHTML
+                    timeContainer.classList.remove('open-modal')
+                })
+            }
+            offersTimeOpenner.addEventListener('click', () => {
+                timeContainer.classList.toggle('open-modal')
             })
         </script>
     </body>

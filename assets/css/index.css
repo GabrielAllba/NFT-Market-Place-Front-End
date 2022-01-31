@@ -341,7 +341,6 @@ form button svg{
     left: 0;
     opacity: 0 ;
     z-index: -1;
-    transition: .3s ease-in-out;
 }
 
 
@@ -817,7 +816,8 @@ footer form input[type='submit']:hover{
 }
 
 /* ACCOUNT COLLECTION */
-#account-collection{
+#account-collection,
+#account-creator{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -826,7 +826,11 @@ footer form input[type='submit']:hover{
     border-bottom: 1px solid rgb(223, 223, 223);
     text-align: center;
 }
-#account-collection > div:first-child{
+#account-creator{
+    min-height: 30rem;
+}
+#account-collection > div:first-child,
+#account-creator > div:first-child{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -837,6 +841,15 @@ footer form input[type='submit']:hover{
 }
 #offers-openner-acc{
     cursor: auto;
+}
+.account-title{
+    margin-bottom: .5rem;
+}
+.owner{
+    color: rgb(165, 58, 219);
+}
+.account-title > h2{
+    margin-bottom: 0;
 }
 .account-details > div:not(:last-child){
     display: flex;
@@ -947,6 +960,10 @@ footer form input[type='submit']:hover{
 .account-collection-content{
     display: grid;
     grid-template-columns: max-content 1fr;
+}
+.account-store{
+    display: grid;
+    grid-template-columns: 1fr;
 }
 .filter-page,
 .filter-page-2{
@@ -1081,21 +1098,19 @@ footer form input[type='submit']:hover{
     position: fixed;
     top: 50%;
     left: 50%;
-    height: max-content;
+    height: 80%;
     width: 50%;
     transform: translate(-50%,-50%);
     background: white;
     border-radius: 10px;
     overflow-y: auto;
     flex-direction: column;
-    justify-content: center;
     z-index: 2;
 }
 @media only screen and (max-width: 768px) {
     .make-offer-to-item-page{
         width: 85%;
         height: 90%;
-        justify-content: space-between;
     }
 }
 .make-offer-to-item-page > div,
@@ -1190,5 +1205,45 @@ footer form input[type='submit']:hover{
     border: 1px solid rgb(62, 135, 230);
 }
 .open-modal{
-    display: flex;
+    display: flex !important;
 }
+
+.offers-time-openner{
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(223, 223, 223);
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+.time-container{
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    border: 1px solid rgb(223, 223, 223);
+}
+.time-container > button{
+    padding: .5rem 1rem;
+    width: 100%;
+    cursor: pointer;
+    font-family: 'Montserrat-Regular';
+    text-align: start;
+}
+.time-container > button:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+input[type="time"]{
+    width: 100%;
+    outline: none;
+    border: 1px solid rgb(223, 223, 223);
+    padding: .5rem ;
+    font-family: 'Montserrat-Regular';
+}
+
+  input[type=time]::-webkit-datetime-edit-ampm-field {
+    background-color: #7155d3;
+    border-radius: 15%;
+    color: white;
+    padding: 19px 13px;
+  }
+

@@ -46,10 +46,10 @@ let accordionDetailListings = document.getElementById('acc-detail-listings')
 
 
 aboutOpenner.addEventListener('click', () => {
-    accordionDetailAbout.classList.toggle('show-accordion')
+    accordionDetailAbout.classList.toggle('hide-accordion')
 })
 detailOpenner.addEventListener('click', () => {
-    accordionDetailDetail.classList.toggle('hide-accordion')
+    accordionDetailDetail.classList.toggle('show-accordion')
 })
 offersOpenner.addEventListener('click', () => {
     accordionDetailOffers.classList.toggle('hide-accordion')

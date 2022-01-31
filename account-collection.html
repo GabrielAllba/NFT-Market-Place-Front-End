@@ -94,7 +94,6 @@
                     <div id="open-list"></div>
                 </button>
             </nav>
-
             <section class="section-container" id="account-collection">
                 <div>       
                     <div class="account-profile">
@@ -168,11 +167,11 @@
                 <div class="items-activity" id="item-activity">
                     <div class="items-act-cont active " id="it-1">
                         <img src="https://img.icons8.com/external-icongeek26-outline-gradient-icongeek26/64/000000/external-card-bitcoin-icongeek26-outline-gradient-icongeek26.png"/>
-                        <p>Items</p>
+                        <p>Items owned</p>
                     </div>
                     <div class="items-act-cont items-act-2 " id="it-2">
                         <img src="https://img.icons8.com/nolan/64/order-history.png"/>
-                        <p>Activity</p>
+                        <p>Collections</p>
                     </div>
                 </div>
             </section>
@@ -837,7 +836,7 @@
                             </li>
                             <li class="accordion-container hide-opt-2">
                                 <div class="accordion-box overall-accordion" id="et-openner-acc">
-                                    <p>Event Type</p>
+                                    <p>Collection Category</p>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                                       </svg>
@@ -846,16 +845,16 @@
                                         <button onclick="openActivity('all', this.id)" id="all" class="all filter-active">All</button>
                                     </div>
                                     <div class="checkbox-acc">
-                                        <button onclick="openActivity('offers-filter-activity', this.id)" id="offers-filter-activity"  class="offers-filter-activity">Offers</button>
+                                        <button onclick="openActivity('offers-filter-activity', this.id)" id="offers-filter-activity"  class="offers-filter-activity">Art</button>
                                     </div>
                                     <div class="checkbox-acc">
-                                        <button onclick="openActivity('listings-filter-activity', this.id)" id="listings-filter-activity" class="listings-filter-activity">Listings</button>
+                                        <button onclick="openActivity('listings-filter-activity', this.id)" id="listings-filter-activity" class="listings-filter-activity">Sport</button>
                                     </div>
                                     <div class="checkbox-acc">
-                                        <button onclick="openActivity('co-filter-activity', this.id)" id="co-filter-activity" class="co-filter-activity">Cancel Offers</button>
+                                        <button onclick="openActivity('co-filter-activity', this.id)" id="co-filter-activity" class="co-filter-activity">Anime</button>
                                     </div>
                                     <div class="checkbox-acc">
-                                        <button onclick="openActivity('cl-filter-activity', this.id)" id="cl-filter-activity" class="cl-filter-activity">Cancel Listings</button>
+                                        <button onclick="openActivity('cl-filter-activity', this.id)" id="cl-filter-activity" class="cl-filter-activity">Animal</button>
                                     </div>
                                 </div>
                             </li>
@@ -866,658 +865,189 @@
                 </div>
                 <div id="activity-acc-col-page" style="padding: 1rem; ">
                     <div id="all" class="offer-desc show-filter-cat" style='margin-bottom: 2rem; border: none;'>
-                        <div id="desc-nft-box">
-                            <ul>
-                                <li class="accordion-container">
-                                    <div class="accordion-box" id="offers-openner-acc">
-                                        <p>All</p>
-                                    </div>
-                                    <div class="accordion-detail acc-detail-offer" id="acc-detail-offers" >
-                                        <table class="activity-offers-table">
-                                            <tr>
-                                                <th>From</th>
-                                                <th>To</th>
-                                                <th>Item</th>
-                                                <th>ETH Price</th>
-                                                <th>Time</th>
-                                                <th>Difference</th>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">
-                                                    <div>
-                                                        <img src="./assets/img/nft.jpg" alt="">
-                                                        <p>Godzilla In A Nutshell</p>
-                                                    </div>
-                                                </a></td>
-                                                <td>
-                                                    <div>
-                                                        <img src="https://img.icons8.com/nolan/64/ethereum.png"/>
-                                                        5
-                                                    </div>
-                                                </td>
-                                                <td>2 Hours ago</td>
-                                                <td>50% Higher than price</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">
-                                                    <div>
-                                                        <img src="./assets/img/nft.jpg" alt="">
-                                                        <p>Godzilla In A Nutshell</p>
-                                                    </div>
-                                                </a></td>
-                                                <td>
-                                                    <div>
-                                                        <img src="https://img.icons8.com/nolan/64/ethereum.png"/>
-                                                        5
-                                                    </div>
-                                                </td>
-                                                <td>2 Hours ago</td>
-                                                <td>20% Lower than price</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">
-                                                    <div>
-                                                        <img src="./assets/img/nft.jpg" alt="">
-                                                        <p>Godzilla In A Nutshell</p>
-                                                    </div>
-                                                </a></td>
-                                                <td>
-                                                    <div>
-                                                        <img src="https://img.icons8.com/nolan/64/ethereum.png"/>
-                                                        5
-                                                    </div>
-                                                </td>
-                                                <td>5 Hours ago</td>
-                                                <td>50% Higher than price</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">
-                                                    <div>
-                                                        <img src="./assets/img/nft.jpg" alt="">
-                                                        <p>Godzilla In A Nutshell</p>
-                                                    </div>
-                                                </a></td>
-                                                <td>
-                                                    <div>
-                                                        <img src="https://img.icons8.com/nolan/64/ethereum.png"/>
-                                                        5
-                                                    </div>
-                                                </td>
-                                                <td>2 Hours ago</td>
-                                                <td>50% Higher than price</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">
-                                                    <div>
-                                                        <img src="./assets/img/nft.jpg" alt="">
-                                                        <p>Godzilla In A Nutshell</p>
-                                                    </div>
-                                                </a></td>
-                                                <td>
-                                                    <div>
-                                                        <img src="https://img.icons8.com/nolan/64/ethereum.png"/>
-                                                        5
-                                                    </div>
-                                                </td>
-                                                <td>2 Hours ago</td>
-                                                <td>50% Higher than price</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">
-                                                    <div>
-                                                        <img src="./assets/img/nft.jpg" alt="">
-                                                        <p>Godzilla In A Nutshell</p>
-                                                    </div>
-                                                </a></td>
-                                                <td>
-                                                    <div>
-                                                        <img src="https://img.icons8.com/nolan/64/ethereum.png"/>
-                                                        5
-                                                    </div>
-                                                </td>
-                                                <td>2 Hours ago</td>
-                                                <td>50% Higher than price</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </li>
-                            </ul>
+                        <h2>All</h2>
+                        <div style="width: 100%; min-height: 10rem; border: 1px solid rgb(223, 223, 223); display: flex; align-items: center;
+                        justify-content: space-between;">
+                            <div style="display: flex; align-items: center; padding: 1rem;">
+                                <img src="./assets/img/nft.jpg" style="max-width: 5rem;" alt="">
+                                <div style="margin-left: .5rem;">
+                                    <strong>The Boring Company</strong>
+                                    <p style="color: grey">Created in September 2020</p>
+                                </div>
+                            </div>
+                            <div style="padding: 1rem;">
+                                <a href="">
+                                    <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/>
+                                </a>
+                                <a href="">
+                                    <img src="https://img.icons8.com/color/48/000000/twitter--v1.png"/>
+                                </a>
+                                <a href="">
+                                    <img src="https://img.icons8.com/color/48/000000/line-me.png"/>
+                                </a>
+                            </div>
                         </div>
+                        <div style="width: 100%; min-height: 10rem; border: 1px solid rgb(223, 223, 223); display: flex; align-items: center; margin-top: .5rem;
+                        justify-content: space-between;">
+                            <div style="display: flex; align-items: center; padding: 1rem;">
+                                <img src="./assets/img/nft.jpg" style="max-width: 5rem;" alt="">
+                                <div style="margin-left: .5rem;">
+                                    <strong>The Sport Company</strong>
+                                    <p style="color: grey">Created in August 2020</p>
+                                </div>
+                            </div>
+                            <div style="padding: 1rem;">
+                                <a href="">
+                                    <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/>
+                                </a>
+                                <a href="">
+                                    <img src="https://img.icons8.com/color/48/000000/twitter--v1.png"/>
+                                </a>
+                                <a href="">
+                                    <img src="https://img.icons8.com/color/48/000000/line-me.png"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div style="width: 100%; min-height: 10rem; border: 1px solid rgb(223, 223, 223); display: flex; align-items: center; margin-top: .5rem;
+                        justify-content: space-between;">
+                            <div style="display: flex; align-items: center; padding: 1rem;">
+                                <img src="./assets/img/nft.jpg" style="max-width: 5rem;" alt="">
+                                <div style="margin-left: .5rem;">
+                                    <strong>The Animal Company</strong>
+                                    <p style="color: grey">Created in September 2021</p>
+                                </div>
+                            </div>
+                            <div style="padding: 1rem;">
+                                <a href="">
+                                    <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/>
+                                </a>
+                                <a href="">
+                                    <img src="https://img.icons8.com/color/48/000000/twitter--v1.png"/>
+                                </a>
+                                <a href="">
+                                    <img src="https://img.icons8.com/color/48/000000/line-me.png"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div style="width: 100%; min-height: 10rem; border: 1px solid rgb(223, 223, 223); display: flex; align-items: center; margin-top: .5rem;
+                        justify-content: space-between;">
+                            <div style="display: flex; align-items: center; padding: 1rem;">
+                                <img src="./assets/img/nft.jpg" style="max-width: 5rem;" alt="">
+                                <div style="margin-left: .5rem;">
+                                    <strong>The Anime Company</strong>
+                                    <p style="color: grey">Created in September 2021</p>
+                                </div>
+                            </div>
+                            <div style="padding: 1rem;">
+                                <a href="">
+                                    <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/>
+                                </a>
+                                <a href="">
+                                    <img src="https://img.icons8.com/color/48/000000/twitter--v1.png"/>
+                                </a>
+                                <a href="">
+                                    <img src="https://img.icons8.com/color/48/000000/line-me.png"/>
+                                </a>
+                            </div>
+                        </div>
+                       
+                        
+                        
                     </div>
                     <div id="offers-filter-activity" class="offer-desc hide-filter-cat" style='margin-bottom: 2rem; border: none;'>
-                        <div id="desc-nft-box">
-                            <ul>
-                                <li class="accordion-container">
-                                    <div class="accordion-box" id="offers-openner-acc">
-                                        <p>Offers</p>
-                                    </div>
-                                    <div class="accordion-detail acc-detail-offer" id="acc-detail-offers" >
-                                        <table class="activity-offers-table">
-                                            <tr>
-                                                <th>From</th>
-                                                <th>To</th>
-                                                <th>Item</th>
-                                                <th>ETH Price</th>
-                                                <th>Time</th>
-                                                <th>Difference</th>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">
-                                                    <div>
-                                                        <img src="./assets/img/nft.jpg" alt="">
-                                                        <p>Godzilla In A Nutshell</p>
-                                                    </div>
-                                                </a></td>
-                                                <td>
-                                                    <div>
-                                                        <img src="https://img.icons8.com/nolan/64/ethereum.png"/>
-                                                        5
-                                                    </div>
-                                                </td>
-                                                <td>2 Hours ago</td>
-                                                <td>50% Higher than price</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">
-                                                    <div>
-                                                        <img src="./assets/img/nft.jpg" alt="">
-                                                        <p>Godzilla In A Nutshell</p>
-                                                    </div>
-                                                </a></td>
-                                                <td>
-                                                    <div>
-                                                        <img src="https://img.icons8.com/nolan/64/ethereum.png"/>
-                                                        5
-                                                    </div>
-                                                </td>
-                                                <td>2 Hours ago</td>
-                                                <td>20% Lower than price</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">
-                                                    <div>
-                                                        <img src="./assets/img/nft.jpg" alt="">
-                                                        <p>Godzilla In A Nutshell</p>
-                                                    </div>
-                                                </a></td>
-                                                <td>
-                                                    <div>
-                                                        <img src="https://img.icons8.com/nolan/64/ethereum.png"/>
-                                                        5
-                                                    </div>
-                                                </td>
-                                                <td>5 Hours ago</td>
-                                                <td>50% Higher than price</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">
-                                                    <div>
-                                                        <img src="./assets/img/nft.jpg" alt="">
-                                                        <p>Godzilla In A Nutshell</p>
-                                                    </div>
-                                                </a></td>
-                                                <td>
-                                                    <div>
-                                                        <img src="https://img.icons8.com/nolan/64/ethereum.png"/>
-                                                        5
-                                                    </div>
-                                                </td>
-                                                <td>2 Hours ago</td>
-                                                <td>50% Higher than price</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">
-                                                    <div>
-                                                        <img src="./assets/img/nft.jpg" alt="">
-                                                        <p>Godzilla In A Nutshell</p>
-                                                    </div>
-                                                </a></td>
-                                                <td>
-                                                    <div>
-                                                        <img src="https://img.icons8.com/nolan/64/ethereum.png"/>
-                                                        5
-                                                    </div>
-                                                </td>
-                                                <td>2 Hours ago</td>
-                                                <td>50% Higher than price</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">
-                                                    <div>
-                                                        <img src="./assets/img/nft.jpg" alt="">
-                                                        <p>Godzilla In A Nutshell</p>
-                                                    </div>
-                                                </a></td>
-                                                <td>
-                                                    <div>
-                                                        <img src="https://img.icons8.com/nolan/64/ethereum.png"/>
-                                                        5
-                                                    </div>
-                                                </td>
-                                                <td>2 Hours ago</td>
-                                                <td>50% Higher than price</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </li>
-                            </ul>
+                        <h2>Art</h2>
+                        <div style="width: 100%; min-height: 10rem; border: 1px solid rgb(223, 223, 223); display: flex; align-items: center;
+                        justify-content: space-between;">
+                            <div style="display: flex; align-items: center; padding: 1rem;">
+                                <img src="./assets/img/nft.jpg" style="max-width: 5rem;" alt="">
+                                <div style="margin-left: .5rem;">
+                                    <strong>The Boring Company</strong>
+                                    <p style="color: grey">Created in 2020</p>
+                                </div>
+                            </div>
+                            <div style="padding: 1rem;">
+                                <a href="">
+                                    <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/>
+                                </a>
+                                <a href="">
+                                    <img src="https://img.icons8.com/color/48/000000/twitter--v1.png"/>
+                                </a>
+                                <a href="">
+                                    <img src="https://img.icons8.com/color/48/000000/line-me.png"/>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div id="listings-filter-activity" class="offer-desc hide-filter-cat" style='margin-bottom: 2rem; border: none;'>
-                        <div id="desc-nft-box">
-                            <ul>
-                                <li class="accordion-container">
-                                    <div class="accordion-box" id="offers-openner-acc">
-                                        <p>Listings</p>
-                                    </div>
-                                    <div class="accordion-detail acc-detail-offer" id="acc-detail-offers" >
-                                        <table class="activity-offers-table">
-                                            <tr>
-                                                <th>From</th>
-                                                <th>To</th>
-                                                <th>Item</th>
-                                                <th>ETH Price</th>
-                                                <th>Time</th>
-                                                <th>Difference</th>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">
-                                                    <div>
-                                                        <img src="./assets/img/nft.jpg" alt="">
-                                                        <p>Godzilla In A Nutshell</p>
-                                                    </div>
-                                                </a></td>
-                                                <td>
-                                                    <div>
-                                                        <img src="https://img.icons8.com/nolan/64/ethereum.png"/>
-                                                        5
-                                                    </div>
-                                                </td>
-                                                <td>2 Hours ago</td>
-                                                <td>50% Higher than price</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">
-                                                    <div>
-                                                        <img src="./assets/img/nft.jpg" alt="">
-                                                        <p>Godzilla In A Nutshell</p>
-                                                    </div>
-                                                </a></td>
-                                                <td>
-                                                    <div>
-                                                        <img src="https://img.icons8.com/nolan/64/ethereum.png"/>
-                                                        5
-                                                    </div>
-                                                </td>
-                                                <td>2 Hours ago</td>
-                                                <td>20% Lower than price</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">
-                                                    <div>
-                                                        <img src="./assets/img/nft.jpg" alt="">
-                                                        <p>Godzilla In A Nutshell</p>
-                                                    </div>
-                                                </a></td>
-                                                <td>
-                                                    <div>
-                                                        <img src="https://img.icons8.com/nolan/64/ethereum.png"/>
-                                                        5
-                                                    </div>
-                                                </td>
-                                                <td>5 Hours ago</td>
-                                                <td>50% Higher than price</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">
-                                                    <div>
-                                                        <img src="./assets/img/nft.jpg" alt="">
-                                                        <p>Godzilla In A Nutshell</p>
-                                                    </div>
-                                                </a></td>
-                                                <td>
-                                                    <div>
-                                                        <img src="https://img.icons8.com/nolan/64/ethereum.png"/>
-                                                        5
-                                                    </div>
-                                                </td>
-                                                <td>2 Hours ago</td>
-                                                <td>50% Higher than price</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">
-                                                    <div>
-                                                        <img src="./assets/img/nft.jpg" alt="">
-                                                        <p>Godzilla In A Nutshell</p>
-                                                    </div>
-                                                </a></td>
-                                                <td>
-                                                    <div>
-                                                        <img src="https://img.icons8.com/nolan/64/ethereum.png"/>
-                                                        5
-                                                    </div>
-                                                </td>
-                                                <td>2 Hours ago</td>
-                                                <td>50% Higher than price</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">
-                                                    <div>
-                                                        <img src="./assets/img/nft.jpg" alt="">
-                                                        <p>Godzilla In A Nutshell</p>
-                                                    </div>
-                                                </a></td>
-                                                <td>
-                                                    <div>
-                                                        <img src="https://img.icons8.com/nolan/64/ethereum.png"/>
-                                                        5
-                                                    </div>
-                                                </td>
-                                                <td>2 Hours ago</td>
-                                                <td>50% Higher than price</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </li>
-                            </ul>
+                        <h2>Sport</h2>
+                        <div style="width: 100%; min-height: 10rem; border: 1px solid rgb(223, 223, 223); display: flex; align-items: center; margin-top: .5rem;
+                        justify-content: space-between;">
+                            <div style="display: flex; align-items: center; padding: 1rem;">
+                                <img src="./assets/img/nft.jpg" style="max-width: 5rem;" alt="">
+                                <div style="margin-left: .5rem;">
+                                    <strong>The Sport Company</strong>
+                                    <p style="color: grey">Created in August 2020</p>
+                                </div>
+                            </div>
+                            <div style="padding: 1rem;">
+                                <a href="">
+                                    <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/>
+                                </a>
+                                <a href="">
+                                    <img src="https://img.icons8.com/color/48/000000/twitter--v1.png"/>
+                                </a>
+                                <a href="">
+                                    <img src="https://img.icons8.com/color/48/000000/line-me.png"/>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div id="co-filter-activity" class="offer-desc hide-filter-cat" style='margin-bottom: 2rem; border: none;'>
-                        <div id="desc-nft-box">
-                            <ul>
-                                <li class="accordion-container">
-                                    <div class="accordion-box" id="offers-openner-acc">
-                                        <p>Cancel Offers</p>
-                                    </div>
-                                    <div class="accordion-detail acc-detail-offer" id="acc-detail-offers" >
-                                        <table class="activity-offers-table">
-                                            <tr>
-                                                <th>From</th>
-                                                <th>To</th>
-                                                <th>Item</th>
-                                                <th>ETH Price</th>
-                                                <th>Time</th>
-                                                <th>Difference</th>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">
-                                                    <div>
-                                                        <img src="./assets/img/nft.jpg" alt="">
-                                                        <p>Godzilla In A Nutshell</p>
-                                                    </div>
-                                                </a></td>
-                                                <td>
-                                                    <div>
-                                                        <img src="https://img.icons8.com/nolan/64/ethereum.png"/>
-                                                        5
-                                                    </div>
-                                                </td>
-                                                <td>2 Hours ago</td>
-                                                <td>50% Higher than price</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">
-                                                    <div>
-                                                        <img src="./assets/img/nft.jpg" alt="">
-                                                        <p>Godzilla In A Nutshell</p>
-                                                    </div>
-                                                </a></td>
-                                                <td>
-                                                    <div>
-                                                        <img src="https://img.icons8.com/nolan/64/ethereum.png"/>
-                                                        5
-                                                    </div>
-                                                </td>
-                                                <td>2 Hours ago</td>
-                                                <td>20% Lower than price</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">
-                                                    <div>
-                                                        <img src="./assets/img/nft.jpg" alt="">
-                                                        <p>Godzilla In A Nutshell</p>
-                                                    </div>
-                                                </a></td>
-                                                <td>
-                                                    <div>
-                                                        <img src="https://img.icons8.com/nolan/64/ethereum.png"/>
-                                                        5
-                                                    </div>
-                                                </td>
-                                                <td>5 Hours ago</td>
-                                                <td>50% Higher than price</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">
-                                                    <div>
-                                                        <img src="./assets/img/nft.jpg" alt="">
-                                                        <p>Godzilla In A Nutshell</p>
-                                                    </div>
-                                                </a></td>
-                                                <td>
-                                                    <div>
-                                                        <img src="https://img.icons8.com/nolan/64/ethereum.png"/>
-                                                        5
-                                                    </div>
-                                                </td>
-                                                <td>2 Hours ago</td>
-                                                <td>50% Higher than price</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">
-                                                    <div>
-                                                        <img src="./assets/img/nft.jpg" alt="">
-                                                        <p>Godzilla In A Nutshell</p>
-                                                    </div>
-                                                </a></td>
-                                                <td>
-                                                    <div>
-                                                        <img src="https://img.icons8.com/nolan/64/ethereum.png"/>
-                                                        5
-                                                    </div>
-                                                </td>
-                                                <td>2 Hours ago</td>
-                                                <td>50% Higher than price</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">
-                                                    <div>
-                                                        <img src="./assets/img/nft.jpg" alt="">
-                                                        <p>Godzilla In A Nutshell</p>
-                                                    </div>
-                                                </a></td>
-                                                <td>
-                                                    <div>
-                                                        <img src="https://img.icons8.com/nolan/64/ethereum.png"/>
-                                                        5
-                                                    </div>
-                                                </td>
-                                                <td>2 Hours ago</td>
-                                                <td>50% Higher than price</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </li>
-                            </ul>
+                        <h2>Anime</h2>
+                        <div style="width: 100%; min-height: 10rem; border: 1px solid rgb(223, 223, 223); display: flex; align-items: center; margin-top: .5rem;
+                        justify-content: space-between;">
+                            <div style="display: flex; align-items: center; padding: 1rem;">
+                                <img src="./assets/img/nft.jpg" style="max-width: 5rem;" alt="">
+                                <div style="margin-left: .5rem;">
+                                    <strong>The Anime Company</strong>
+                                    <p style="color: grey">Created in September 2021</p>
+                                </div>
+                            </div>
+                            <div style="padding: 1rem;">
+                                <a href="">
+                                    <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/>
+                                </a>
+                                <a href="">
+                                    <img src="https://img.icons8.com/color/48/000000/twitter--v1.png"/>
+                                </a>
+                                <a href="">
+                                    <img src="https://img.icons8.com/color/48/000000/line-me.png"/>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div id="cl-filter-activity" class="offer-desc hide-filter-cat" style='margin-bottom: 2rem; border: none;'>
-                        <div id="desc-nft-box">
-                            <ul>
-                                <li class="accordion-container">
-                                    <div class="accordion-box" id="offers-openner-acc">
-                                        <p>Cancel Listings</p>
-                                    </div>
-                                    <div class="accordion-detail acc-detail-offer" id="acc-detail-offers" >
-                                        <table class="activity-offers-table">
-                                            <tr>
-                                                <th>From</th>
-                                                <th>To</th>
-                                                <th>Item</th>
-                                                <th>ETH Price</th>
-                                                <th>Time</th>
-                                                <th>Difference</th>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">
-                                                    <div>
-                                                        <img src="./assets/img/nft.jpg" alt="">
-                                                        <p>Godzilla In A Nutshell</p>
-                                                    </div>
-                                                </a></td>
-                                                <td>
-                                                    <div>
-                                                        <img src="https://img.icons8.com/nolan/64/ethereum.png"/>
-                                                        5
-                                                    </div>
-                                                </td>
-                                                <td>2 Hours ago</td>
-                                                <td>50% Higher than price</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">
-                                                    <div>
-                                                        <img src="./assets/img/nft.jpg" alt="">
-                                                        <p>Godzilla In A Nutshell</p>
-                                                    </div>
-                                                </a></td>
-                                                <td>
-                                                    <div>
-                                                        <img src="https://img.icons8.com/nolan/64/ethereum.png"/>
-                                                        5
-                                                    </div>
-                                                </td>
-                                                <td>2 Hours ago</td>
-                                                <td>20% Lower than price</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">
-                                                    <div>
-                                                        <img src="./assets/img/nft.jpg" alt="">
-                                                        <p>Godzilla In A Nutshell</p>
-                                                    </div>
-                                                </a></td>
-                                                <td>
-                                                    <div>
-                                                        <img src="https://img.icons8.com/nolan/64/ethereum.png"/>
-                                                        5
-                                                    </div>
-                                                </td>
-                                                <td>5 Hours ago</td>
-                                                <td>50% Higher than price</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">
-                                                    <div>
-                                                        <img src="./assets/img/nft.jpg" alt="">
-                                                        <p>Godzilla In A Nutshell</p>
-                                                    </div>
-                                                </a></td>
-                                                <td>
-                                                    <div>
-                                                        <img src="https://img.icons8.com/nolan/64/ethereum.png"/>
-                                                        5
-                                                    </div>
-                                                </td>
-                                                <td>2 Hours ago</td>
-                                                <td>50% Higher than price</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">
-                                                    <div>
-                                                        <img src="./assets/img/nft.jpg" alt="">
-                                                        <p>Godzilla In A Nutshell</p>
-                                                    </div>
-                                                </a></td>
-                                                <td>
-                                                    <div>
-                                                        <img src="https://img.icons8.com/nolan/64/ethereum.png"/>
-                                                        5
-                                                    </div>
-                                                </td>
-                                                <td>2 Hours ago</td>
-                                                <td>50% Higher than price</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">Jackson Mamoa</a></td>
-                                                <td><a href="">
-                                                    <div>
-                                                        <img src="./assets/img/nft.jpg" alt="">
-                                                        <p>Godzilla In A Nutshell</p>
-                                                    </div>
-                                                </a></td>
-                                                <td>
-                                                    <div>
-                                                        <img src="https://img.icons8.com/nolan/64/ethereum.png"/>
-                                                        5
-                                                    </div>
-                                                </td>
-                                                <td>2 Hours ago</td>
-                                                <td>50% Higher than price</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </li>
-                            </ul>
+                        <h2>Animal</h2>
+                        <div style="width: 100%; min-height: 10rem; border: 1px solid rgb(223, 223, 223); display: flex; align-items: center; margin-top: .5rem;
+                        justify-content: space-between;">
+                            <div style="display: flex; align-items: center; padding: 1rem;">
+                                <img src="./assets/img/nft.jpg" style="max-width: 5rem;" alt="">
+                                <div style="margin-left: .5rem;">
+                                    <strong>The Animal Company</strong>
+                                    <p style="color: grey">Created in September 2021</p>
+                                </div>
+                            </div>
+                            <div style="padding: 1rem;">
+                                <a href="">
+                                    <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/>
+                                </a>
+                                <a href="">
+                                    <img src="https://img.icons8.com/color/48/000000/twitter--v1.png"/>
+                                </a>
+                                <a href="">
+                                    <img src="https://img.icons8.com/color/48/000000/line-me.png"/>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1584,6 +1114,14 @@
         </div>
         
         <div class="outside"></div>
+        <style>
+            .offer-desc{
+                overflow-x: unset;
+            }
+            .offer-desc > div > div:last-child img{
+                width: 2rem;
+            }
+        </style>
         <script src="./assets/js/index.js" type="text/javascript"></script>
         <script>
             let itemsAct1 = document.getElementById('it-1');
