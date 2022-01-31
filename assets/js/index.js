@@ -33,13 +33,14 @@ let detailOpenner= document.getElementById('detail-openner-acc')
 let offersOpenner= document.getElementById('offers-openner-acc')
 let attributesOpenner =document.getElementById('attribute-openners')
 let aboutProductOpenner = document.getElementById('about-product-openners')
+let listingsProductOpenner = document.getElementById('listings-openner-acc')
 
 let accordionDetailAbout = document.getElementById('acc-detail-about')
 let accordionDetailDetail = document.getElementById('acc-detail-detail')
 let accordionDetailOffers= document.getElementById('acc-detail-offers')
 let accordionDetailAttributes = document.getElementById('acc-detail-attributes')
 let accordionDetailProduct= document.getElementById('acc-detail-product')
-
+let accordionDetailListings = document.getElementById('acc-detail-listings')
 
 
 
@@ -58,6 +59,9 @@ attributesOpenner.addEventListener('click', () =>{
 })
 aboutProductOpenner.addEventListener('click', () => {
     accordionDetailProduct.classList.toggle('hide-accordion')
+})
+listingsProductOpenner.addEventListener('click', ()=>{
+    accordionDetailListings.classList.toggle('hide-accordion')
 })
 
 
