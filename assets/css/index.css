@@ -61,7 +61,8 @@ nav{
     box-shadow:rgba(0, 0, 0, 0.35) 0px 2px 10px;
     z-index: 5;
 }
-nav > div{
+nav > div,
+nav > div > a{
     display: flex;
     align-items: center;
     margin-right: .5rem;
@@ -335,7 +336,7 @@ form button svg{
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.699);
     top: 0;
     left: 0;
     opacity: 0 ;
@@ -929,7 +930,8 @@ footer form input[type='submit']:hover{
     outline: none;
     border: none;
 }
-.items-activity > div > i{
+.items-activity > div > img{
+    width: 2rem;
     margin-right: .3rem;
 }
 
@@ -1045,20 +1047,20 @@ footer form input[type='submit']:hover{
     color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
-#activity-offers-table  a:hover{
+.activity-offers-table  a:hover{
     text-decoration:underline rgb(181, 181, 181);
 
 }
-#activity-offers-table td > div,
-#activity-offers-table td > a > div
+.activity-offers-table td > div,
+.activity-offers-table td > a > div
 {
     display: flex;
     align-items: center;
 }
-#activity-offers-table td > div > img{
+.activity-offers-table td > div > img{
     width: 2rem;
 }
-#activity-offers-table td > a > div > img{
+.activity-offers-table td > a > div > img{
     width: 2rem;
     margin-right: .5rem;
     height: auto;
@@ -1069,4 +1071,124 @@ footer form input[type='submit']:hover{
 }
 .hide-filter-cat{
     display: none;
+}
+
+/* PRODUCT PAGE CONFIRM MAKE AN OFFER */
+.make-offer-to-item-page{
+    display: none;
+    border: 1px solid rgb(211, 211, 211);
+    margin-bottom: 5rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: max-content;
+    width: 50%;
+    transform: translate(-50%,-50%);
+    background: white;
+    border-radius: 10px;
+    overflow-y: auto;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+}
+@media only screen and (max-width: 768px) {
+    .make-offer-to-item-page{
+        width: 85%;
+        height: 90%;
+        justify-content: space-between;
+    }
+}
+.make-offer-to-item-page > div,
+.make-offer-to-item-page > form{
+    display: flex;
+    flex-direction: column;
+    padding: .5rem 1rem;
+}
+.items-title-buy > h2{
+    margin: 1rem 0;
+
+}
+.items-title-buy{
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+.items-detail{
+    display: flex;
+    align-items: space-between;
+    width: 90%;
+}
+.items-detail > div{
+    margin-bottom: 1rem;
+}
+.make-offer-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.make-offer-desc > div,
+.make-offer-desc > div > label{
+    display: flex;
+    align-items: center;
+}
+.make-offer-desc > div{
+    display: flex;
+    width: 100%;
+}
+.make-offer-desc > div > input{
+    font-family: 'Montserrat-Regular';
+    margin-left: .5rem;
+    outline: none;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius:8px;
+    padding: .5rem 1rem;
+    width: 100%;
+}
+.inner-items-detail{
+    display: flex;
+    align-items: center;
+}
+.price-img{
+    display: flex;
+    align-items: center;
+}
+.inner-items-detail > div>span{
+    font-family: 'Montserrat-Regular';
+}
+.wallet-balance > div{
+    display: flex;
+    align-items: center;
+}
+.confirm-box{
+    display: flex;
+    flex-direction: column;
+}
+.confirm-box > div{
+    display: flex;
+    font-family: 'Montserrat-Regular';
+    align-items: flex-start;
+    margin-bottom: .5rem;
+}
+.submit-outer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.submit-outer > button[class="cancel-inner"]{
+    margin-right: .3rem;
+}
+.submit-inner,
+.cancel-inner{
+    background: rgb(62, 135, 230);
+    padding: .5rem 1rem;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.cancel-inner{
+    background: white;
+    color: rgb(62, 135, 230);
+    border: 1px solid rgb(62, 135, 230);
+}
+.open-modal{
+    display: flex;
 }

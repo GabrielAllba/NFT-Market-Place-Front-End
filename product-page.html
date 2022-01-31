@@ -15,8 +15,10 @@
         <div class="container">
             <nav class="section-container"> 
                 <div>
-                    <img src="./assets/img/opensea.svg" alt="">
-                    <h1>NFTroops</h1>
+                    <a href="./index.html">
+                        <img src="./assets/img/opensea.svg" alt="">
+                        <h1>NFTroops</h1>
+                    </a>
                 </div>
                 <form action="" class="" id="search-form">
                     <button type="submit">
@@ -142,7 +144,7 @@
                                         <img src="https://img.icons8.com/nolan/64/ethereum.png"/>
                                         <p>6</p><span>($14,780.28)</span>
                                     </div>
-                                    <button>
+                                    <button class="open-make-offers-modal">
                                         Make Offers
                                     </button>
                                 </div>
@@ -440,9 +442,91 @@
                     </div>
                 </div>
             </footer>
+
+            <div class="make-offer-to-item-page">
+                <div class="items-title-buy">
+                    <h2>Items Offers</h2>
+                </div>
+                <form class="items-detail">
+                    <div class="inner-items-detail">
+                        <strong>Price</strong>
+                        <div class="price-img">
+                            <img src="https://img.icons8.com/nolan/64/ethereum.png" style="width: 1.5rem;"/>
+                            <span>10</span>
+                        </div>
+                    </div>
+                    <div class="make-offer-desc">
+                        <strong style="margin-bottom: 1rem;">Make offers</strong>
+                        <div>
+                            <label for="input-price-item">
+                                <img src="https://img.icons8.com/nolan/64/ethereum.png" style="width: 1.5rem;"/>
+                                <p>ETH</p>
+                            </label>
+                            <input id="input-price-item" type="number" placeholder="Input price" required>
+                        </div>
+                    </div>
+                    <div class="wallet-balance">
+                        <div>
+                            <strong>Balance: </strong>
+                            <div class="price-img">
+                                <img src="https://img.icons8.com/nolan/64/ethereum.png" style="width: 1.5rem;"/>
+                                <p>50</p>
+                            </div>
+                        </div>
+                        <div style="margin-top: 1rem">
+                            <strong>Offer Expiration</strong>
+                            <div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="confirm-box">
+                        <div>
+                            <input type="checkbox" id="confirm-1" required>
+                            <label for="confirm-1">By checking this box, I acknowledge that this bundle contains an item that has not been reviewed or approved by NFTroops.</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="confirm-2" required>
+                            <label for="confirm-2">By checking this box, I agree to NFTroops's Terms of Service</label>
+                        </div>
+    
+                    </div>
+
+                    <div class="submit-outer">
+                        <button type="submit" class="cancel-inner">Cancel Offer</button>
+                        <button type="submit" class="submit-inner">Make Offer</button>
+                    </div>
+                </form>
+            </div>
         </div>
         <div class="outside"></div>
+        
 
         <script src="./assets/js/index.js"></script>
+        <script>
+            let openMakeOffersModal = document.getElementsByClassName('open-make-offers-modal')[0]
+            let makeOfferToItemPage = document.getElementsByClassName('make-offer-to-item-page')[0]
+            let cancelInner = document.getElementsByClassName('cancel-inner')[0]
+            openMakeOffersModal.addEventListener('click', () =>{ 
+                makeOfferToItemPage.classList.add('open-modal')
+                outside.style.opacity = '1'
+                outside.style.zIndex = '1'
+                
+            })
+            outside.addEventListener('click', () => {
+                if(makeOfferToItemPage.classList.contains('open-modal')){
+                    outside.style.opacity = ''
+                    outside.style.zIndex = ''
+                    makeOfferToItemPage.classList.remove('open-modal')
+                }
+            })
+            
+            cancelInner.addEventListener('click', () => {
+                outside.style.opacity = ''
+                outside.style.zIndex = ''
+                makeOfferToItemPage.classList.remove('open-modal')
+            })
+        </script>
     </body>
 </html>
