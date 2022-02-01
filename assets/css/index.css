@@ -19,6 +19,7 @@ body{
     margin: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    background: #121619;
 }
 p{
     font-family: 'Montserrat-Regular';
@@ -29,10 +30,10 @@ p{
     margin-right: auto;
     margin-left: auto;
     position: relative;
+    z-index: 1;
 }
 .section-container{
     padding: 0 1.5rem;
-    z-index: 1;
 }
 /* UNIVERSAL STYLE */
 h1{
@@ -47,19 +48,24 @@ li{
 a{
     text-decoration: none;
     font-family: 'Montserrat-Regular';
-    color: black
+    color: rgb(255, 255, 255)
 }
-
+.c-green{
+    color: rgb(54, 230, 168);
+}
+.c-white{
+    color: white;
+}
 /* NAVIGATION BAR */
 nav{
     display: flex;
     position: sticky;
     top: 0;
-    background: white;
     justify-content: space-between;
     align-items: center;
-    box-shadow:rgba(0, 0, 0, 0.35) 0px 2px 10px;
     z-index: 5;
+    color: white;
+    background: #121619;
 }
 nav > div,
 nav > div > a{
@@ -78,12 +84,12 @@ nav div img{
     padding: .5rem;
 } 
 #main-navbar > li > a{
-    font-family: 'Montserrat-Bold';
-    color: rgb(99, 99, 99);
+    font-family: 'Montserrat-Regular';
+    color: rgb(226, 226, 226);
     transition: .2s ease-in-out  ;
 }
 #main-navbar > li > a:hover{
-    color: black;
+    color: rgb(255, 255, 255);
     transition: .2s ease-in-out;
 }
 #main-navbar > li > a:hover > svg{
@@ -93,9 +99,9 @@ nav div img{
 }
 nav form{
     display: flex;
-    border: 1px solid rgb(211, 211, 211);
     border-radius: .5rem;
-    padding: .5rem;
+    background-color: rgb(46, 46, 46);
+    padding: .2rem .5rem;
     height: 1.7rem;
     width: calc(40% - 50px);
     overflow: hidden;
@@ -103,7 +109,17 @@ nav form{
 nav form input{
     border: none;
     outline: none;
+    color: rgb(167, 167, 167);
     width: 100%;
+}
+::placeholder{
+    color: white;
+}
+:-ms-input-placeholder{
+    color: white;
+}
+::-ms-input-placeholder{
+    color: white;
 }
 form button{
     background: none;
@@ -111,6 +127,9 @@ form button{
 }
 form button svg{
     background: none;
+}
+#search{
+    background: transparent;
 }
 .nav-link{
     position: relative;
@@ -133,8 +152,7 @@ form button svg{
     width: 12rem;
     left: 0;
     border-radius: 5px;
-    background: white;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background: #1e1e1f;
     transition: .2s ease-in-out;
     padding: 0;
     pointer-events: none;
@@ -152,6 +170,7 @@ form button svg{
     padding: .8rem 1rem;
     transition: .2s ease-in-out;
     align-items: center;
+    color: rgb(226, 226, 226);
 }
 .wallet-dropdown > p,
 .dropdown > p{
@@ -166,7 +185,7 @@ form button svg{
     padding-right: .5rem;
 }
 .dropdown-link:not(:last-child){
-    border-bottom: 1px solid rgb(223, 223, 223);
+    border-bottom: 1px solid rgb(61, 61, 61);
     width: 100%;
 }
 
@@ -356,7 +375,7 @@ form button svg{
     margin: .5rem .2rem;
     padding: .5rem 1rem;
     font-size: .8rem;
-    border: 1px solid red;
+    background: rgb(33, 33, 33);
 }
 .card{
     background: white;
@@ -367,14 +386,16 @@ form button svg{
 .product-card{
     padding: 0;
     padding-bottom: 1rem;
-    border: 1px solid rgb(233, 233, 233);
     display: flex;
     height:fit-content;
+    background: transparent;
     flex-direction: column;
     justify-content: center;
 }
 .desc-card{
-    border: 1px solid rgb(240, 240, 240);
+    border: 1px solid rgb(61, 61, 61);
+    background: transparent;
+    color: white;
 }
 .card > .title > h2{
     font-family: 'Montserrat-Bold';
@@ -443,15 +464,14 @@ form button svg{
     padding: .2rem;
     display: flex;
     border-radius: 50%;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap;;
 }
 .creator-socmed > a >img{
-    width: 2rem;
+    width: 1.5rem;
 }
 svg{
     width: 1.2rem;
 }
-
 .price-desc{
     display: flex;
     margin-top: 1rem;
@@ -459,7 +479,7 @@ svg{
 }
 .price-desc > div{
     border-radius: 10px;
-    border: 1px solid rgb(218, 218, 218);
+    border: 1px solid rgb(75, 75, 75);
     margin: .5rem .3rem;
     height: max-content;
 }
@@ -480,10 +500,10 @@ svg{
     padding: 1rem;
 }
 .price-desc > div > div:not(:last-child){
-    border-bottom: 1px solid rgb(218, 218, 218);
+    border-bottom: 1px solid rgb(102, 102, 102);
 }
 .sale-ends{
-    color: grey;
+    color: rgb(216, 216, 216);
 }
 .prod-price{
     display: flex;
@@ -499,11 +519,12 @@ svg{
 }
 .prod-price > span{
     font-family: 'Montserrat-Regular';
-    color: grey;
+    color: rgb(204, 204, 204);
     margin-left: .5rem;
 }
+
 .min-bid > button{
-    background: rgb(255, 54, 107);
+    background: rgb(26, 199, 138);
     border: none;
     padding: .5rem 2rem;
     color: white;
@@ -521,12 +542,10 @@ svg{
     margin: 0;
     padding: 0;
 }
-#desc-nft-box > ul > li{
-    padding: .5rem;
-}
-#desc-nft-box > ul > li:not(:last-child){
-    border-bottom: 1px solid rgb(220, 220, 220);
-}
+
+#desc-nft-box > ul > li:not(:last-child) {
+    border-bottom: 1px solid rgb(28, 25, 25); 
+ }
 .accordion-box{
     cursor: pointer;
 }
@@ -570,9 +589,8 @@ svg{
     justify-content: center !important;
     margin: .3rem;
     padding: 1rem;
-    background: rgb(242, 251, 255);
     border-radius: 10px;
-    border: 1px solid rgb(153, 214, 255);
+    border: 1px solid rgb(43, 231, 181);
 }
 .attributes-detail{
     flex-direction: row;
@@ -585,7 +603,7 @@ svg{
 /* OFFERS  */
 .offer-desc{
     width: 100%;
-    border: 1px solid rgb(230, 230, 230);
+    border: 1px solid rgb(77, 77, 77);
     border-radius: 10px;
     margin-top: 1rem;
     overflow-x: auto;
@@ -601,21 +619,33 @@ table{
     height: 7px;
 }
 ::-webkit-scrollbar-track {
-    background: #ffffff; 
+    background: #181717; 
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(206, 206, 206); 
+    background: rgb(58, 60, 59); 
     border-radius: 30px;
     margin-bottom: .5rem;
+    
 }
 
 table td, 
 table th {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
-
+    padding: 1.5rem 8px;
+    color: white;
+}
+table tr:nth-child(even){
+    background: rgb(20, 38, 33);
+}
+table tr:nth-child(odd){
+    background: rgb(27, 63, 51);
+}
+table tr:first-child{
+    background: none;
+}
+table tr:first-child th{
+    color: rgb(48, 204, 162);
+}
   .detail-2-container{
       margin-top: 1rem;
       display: grid;
@@ -634,6 +664,9 @@ table th {
       flex-direction: column;
       margin-bottom: 2rem;
     }
+    .similar-title{
+        color: white;
+    }
     .sim-image-container > img{
         max-width: 100%;
         border-top-right-radius: 10px;
@@ -641,7 +674,10 @@ table th {
     }
     .sim-image-container{
         max-width: 100%;
-        
+    }
+    .sim-image-container-product{
+        height: 19rem;
+        overflow:hidden;
     }
     .similar-content{
         display: grid;
@@ -650,9 +686,10 @@ table th {
     }
     
     .similar-item{
-        border: 1px solid rgb(221, 221, 221);
         border-radius: 10px;
         transition: .2s ease-in-out;
+        color: white;
+        background: rgb(39, 39, 39);
     }
     .sim-description,
     .sim-item-price-title{
@@ -660,6 +697,7 @@ table th {
       display: flex;
       align-items: center;
   }
+  
   .sim-item-price-title{
       padding-bottom: 0;
       display: flex;
@@ -674,7 +712,9 @@ table th {
       width: 2rem;
       margin-right: .2rem;
   }
-
+  .sim-item-price-title > strong{
+      color: rgb(223, 223, 223);
+  }
   .sim-description > div:not(:last-child){
       margin-right: .6rem;
   }
@@ -683,13 +723,14 @@ table th {
   }
   .sim-description > div > strong{
       font-size: .8rem;
+      color: rgb(189, 189, 189);
   }
   .sim-description > div > img{
       border-radius: 50%;
       max-width: 2rem;
   }
   .similar-item:hover{
-      transform: translateY(-2%);
+      transform: translateY(-1%);
       transition: .2s ease-in-out;
       box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   }
@@ -717,13 +758,17 @@ table th {
 
   /* FOOTER */
   footer{
-      background: rgb(45, 96, 172);
+      background: rgb(25, 26, 26);
       display: flex;
       color: white;
       flex-direction: column;
       justify-content: space-between;
       min-height: 30rem;
   }
+  footer strong{
+    color: rgb(34, 197, 140);
+}
+
   footer > div > div > ul > li{
       margin-bottom: 1rem;
   }
@@ -765,15 +810,14 @@ table th {
       color: white;
   }
 footer form input[type='submit']{
-    background: rgb(36, 84, 156);
+    border: 1.5px solid rgb(26, 167, 113);
+    color: white;
     cursor: pointer;
-    border: none;
     min-width: 7rem;
     transition: .2s ease-in-out;
 }
 footer form input[type='submit']:hover{
-    background: white;
-    color: rgb(45, 96, 172);
+    background: rgb(26, 167, 113);
     cursor: pointer;
     transition: .2s ease-in-out;
     border: none;
@@ -795,7 +839,7 @@ footer form input[type='submit']:hover{
     content: '';
     width: 100%;
     height: 1px;
-    background-color: rgba(255, 255, 255, 0.329);
+    background-color: rgb(20, 220, 127);
     position: absolute;
     top: 0;
     left: 0;
@@ -826,6 +870,11 @@ footer form input[type='submit']:hover{
     border-bottom: 1px solid rgb(223, 223, 223);
     text-align: center;
 }
+#account-collection{
+    border-bottom: none;
+    background: #121619; 
+    color: white;
+}
 #account-creator{
     min-height: 30rem;
 }
@@ -837,7 +886,6 @@ footer form input[type='submit']:hover{
     align-items: center;
     min-height: 20rem;
     text-align: center;
-    padding-top: 3rem;
 }
 #offers-openner-acc{
     cursor: auto;
@@ -846,7 +894,7 @@ footer form input[type='submit']:hover{
     margin-bottom: .5rem;
 }
 .owner{
-    color: rgb(165, 58, 219);
+    color: rgb(44, 255, 181);
 }
 .account-title > h2{
     margin-bottom: 0;
@@ -860,8 +908,8 @@ footer form input[type='submit']:hover{
 .account-details > div:not(:last-child) > div{
     padding: .5rem 2rem;
     margin: .3rem;
-    border: 1px solid rgb(223, 223, 223);
     border-radius: 10px;
+    background: rgb(38, 38, 38);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -906,9 +954,18 @@ footer form input[type='submit']:hover{
 }
 
 .account-coll-socmed > ul > li > a >img{
-    width: 2rem;
+    width: 1.5rem;
     padding: .2rem;
     color: white;
+}
+.account-profile{
+    margin-top: 10rem;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    background: #121619;
+    border-radius: 50%;
 }
 @media only screen and (max-width: 576px){
     .account-details > div:not(:last-child) > div{
@@ -918,16 +975,19 @@ footer form input[type='submit']:hover{
     .d-flex{
         justify-content: center;
     }
-    .account-profile{
-        margin-top: 1rem;
-    }
 }
 
 .custom-detail-account > p{
     max-width: 70%;
 }
+@media only screen and (max-width: 576px) {
+    .custom-detail-account > p{
+        max-width: 80%;
+    }
+}
 .items-activity{
     display: flex;
+    margin-top:3rem;
 }
 .items-act-cont{
     display: flex;
@@ -937,6 +997,14 @@ footer form input[type='submit']:hover{
     cursor: pointer;
     margin: 0 .5rem;
     
+}
+.verified-account{
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    background: #121619;
+    padding: .4rem;
+    border-radius: 50%;
 }
 
 .items-activity > div{
@@ -955,7 +1023,7 @@ footer form input[type='submit']:hover{
     height: 3px ;
     bottom: -2px ;
     left: 0 ;
-    background-color: rgb(255, 64, 96) ;
+    background-color: rgb(42, 206, 143) ;
 }
 .account-collection-content{
     display: grid;
@@ -972,25 +1040,25 @@ footer form input[type='submit']:hover{
     top: 0;
     left: 0;
     height: 100vh;
-    border-right: 1px solid rgb(228, 228, 228);
     overflow: auto;
-    background: white;
+    background: rgb(29, 29, 29);
 }
 .filter-page > div > ul{
     padding: 0;
 }
-.filter-page > #desc-nft-box > ul > .accordion-container{
-    padding: 0;
+.filter-page > div > ul > .accordion-container > .accordion-box, .filter-page-2 > div > ul > .accordion-container > .accordion-box {
+    padding: 1rem;
+    border-bottom: none
 }
 .filter-page > div > ul > .accordion-container > .accordion-box,
 .filter-page-2 > div > ul > .accordion-container > .accordion-box{
     padding: 1rem;
-    border-bottom: 1px solid rgb(228, 228, 228);
 }
 .filter-page > div > ul > .accordion-container > .accordion-detail{
-    background-color: #ffffff;
+    background-color: #222222;
     padding: 1rem;
     padding-left: .2rem;
+    color: white;
 }
 .filter-page-2 > div > ul > .accordion-container >.accordion-box{
     border-bottom: none;
@@ -998,9 +1066,11 @@ footer form input[type='submit']:hover{
 #acc-detail-filter{
     display: flex;
 }
-#filter-openner-acc > p,
-#filter-openner-2-acc > p{
-    color: rgb(56, 148, 209);
+
+
+#filter-openner-acc > p, 
+#filter-openner-2-acc > p {
+    color: rgb(53, 214, 139);
 }
 
 .checkbox-acc{
@@ -1044,12 +1114,13 @@ footer form input[type='submit']:hover{
 .checkbox-acc > button{
     font-family: 'Montserrat-regular';
     padding: .5rem 1rem;
-    border: 1px solid rgb(228, 228, 228);
+    border: none;
     margin: .3rem;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
-    background-color: white;
+    background-color: #2e2e2e;
     width: 100%;
+    color: white;
     transition: .2s ease-in-out;
     text-align: start;
 }
@@ -1060,7 +1131,7 @@ footer form input[type='submit']:hover{
 }
 
 .filter-active{
-    background-color: rgb(55, 144, 226) !important;
+    background-color: rgb(51, 145, 109) !important;
     color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
@@ -1075,7 +1146,7 @@ footer form input[type='submit']:hover{
     align-items: center;
 }
 .activity-offers-table td > div > img{
-    width: 2rem;
+    width: 1.5rem;
 }
 .activity-offers-table td > a > div > img{
     width: 2rem;
