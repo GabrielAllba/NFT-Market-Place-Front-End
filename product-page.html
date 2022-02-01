@@ -440,7 +440,7 @@
                     <div class="inner-items-detail">
                         <strong>Price</strong>
                         <div class="price-img">
-                            <img src="https://img.icons8.com/nolan/64/ethereum.png" style="width: 1.5rem;"/>
+                            <img src="https://img.icons8.com/ios/50/26e07f/ethereum.png"/ style="width: 1.5rem;">
                             <span>10</span>
                         </div>
                     </div>
@@ -448,7 +448,7 @@
                         <strong style="margin-bottom: 1rem;">Make offers</strong>
                         <div>
                             <label for="input-price-item">
-                                <img src="https://img.icons8.com/nolan/64/ethereum.png" style="width: 1.5rem;"/>
+                                <img src="https://img.icons8.com/ios/50/26e07f/ethereum.png"/ style="width: 1.5rem;">
                                 <p>ETH</p>
                             </label>
                             <input id="input-price-item" type="number" placeholder="Input price" required>
@@ -458,7 +458,7 @@
                         <div>
                             <strong>Balance: </strong>
                             <div class="price-img">
-                                <img src="https://img.icons8.com/nolan/64/ethereum.png" style="width: 1.5rem;"/>
+                                <img src="https://img.icons8.com/ios/50/26e07f/ethereum.png"/ style="width: 1.5rem;">
                                 <p>50</p>
                             </div>
                         </div>
@@ -504,6 +504,32 @@
                         <button type="submit" class="cancel-inner">Cancel Offer</button>
                         <button type="submit" class="submit-inner">Make Offer</button>
                     </div>
+                    <style>
+                        input[type="checkbox"]{
+                            position: relative;
+                            outline: none;
+                            border: none;
+                        }
+                        input[type="checkbox"]::after{
+                            content: '';
+                            position: absolute;
+                            background: rgb(90, 90, 90);
+                            border-radius: 2px;
+                            width: 100%;
+                            height: 100%;
+                            left: -10%;
+                            top: -10%;
+                            padding: .2rem;
+
+                        }
+                        input[type="checkbox"]:checked:after{
+                            background: rgb(20, 186, 114);
+
+                        }
+                        .confirm-box > div> label{
+                            margin-left: 1rem;
+                        }
+                    </style>
                 </form>
             </div>
 
@@ -578,6 +604,18 @@
             }
             #desc-nft-box > ul > .accordion-container:first-child{
                 border-bottom: 1px solid rgb(89, 89, 89);
+            }
+            .make-offer-desc > div > input{
+                background: none;
+                color: rgb(213, 213, 213);
+            }
+            #appt{
+                background: none;
+                color: white;
+                border: 1px solid rgb(89, 89, 89);
+            }
+            input[type="time"]::-webkit-calendar-picker-indicator{
+                filter: invert(48%) sepia(1%) saturate(100%) hue-rotate(100deg) brightness(95%) contrast(80%);
             }
         </style>
 
