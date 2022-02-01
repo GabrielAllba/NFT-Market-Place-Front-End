@@ -151,7 +151,7 @@ form button svg{
     width: 12rem;
     left: 0;
     border-radius: 5px;
-    background: #121619;
+    background: #242424;
     transition: .2s ease-in-out;
     padding: 0;
     pointer-events: none;
@@ -294,6 +294,7 @@ form button svg{
         left: 0;
         height: 0;
         box-shadow: none;
+        background: #121619;
         pointer-events: none;
     }
     .dropdown-link > a{
