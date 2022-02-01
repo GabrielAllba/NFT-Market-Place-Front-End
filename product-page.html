@@ -598,6 +598,7 @@
         <style>
             .accordion-container{
                 padding: 1rem;
+                overflow-x: auto;
             }
             #desc-nft-box > ul > .accordion-container{
                 padding: 1rem 2rem;
@@ -616,6 +617,15 @@
             }
             input[type="time"]::-webkit-calendar-picker-indicator{
                 filter: invert(48%) sepia(1%) saturate(100%) hue-rotate(100deg) brightness(95%) contrast(80%);
+            }
+            @media only screen and (max-width: 576px){
+                #desc-nft-box > ul > .accordion-container {
+                    padding: 1rem 0;
+                }
+                #offers-openner-acc,
+                #listings-openner-acc{
+                    padding: 0 1rem;
+                }
             }
         </style>
 
