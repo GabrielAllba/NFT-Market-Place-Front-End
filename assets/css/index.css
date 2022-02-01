@@ -30,7 +30,6 @@ p{
     margin-right: auto;
     margin-left: auto;
     position: relative;
-    z-index: 1;
 }
 .section-container{
     padding: 0 1.5rem;
