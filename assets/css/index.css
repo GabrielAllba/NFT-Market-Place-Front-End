@@ -751,7 +751,6 @@ table tr:first-child th{
   }
   .from-where{
       color: white;
-      max-width: 60%;
       margin-left: .5rem;
   }
   .from-where > p:first-child{
