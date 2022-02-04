@@ -81,99 +81,122 @@
                     <div id="open-list"></div>
                 </button>
             </nav>
-            <section class="section-container about-us-sct" id="how-to-sell">
+            <section class="section-container" id="how-to-sell">
+                <h2>Create Collection</h2>
                 <div class="step-to-sell">
                     <div class="step">
-                        <h1 class="about-us-title-step">NFTroops</h1>
-                        <div class="step-desc" style="position: relative;">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates voluptatem reiciendis nemo corrupti architecto maxime consequatur, modi magni rerum quaerat laborum
-                                nam nesciunt. Corporis labore totam officia sapiente, repellat vitae. lorem</p><br>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, optio hic minima delectus dolorem odit soluta, repellat nihil neque dolores, earum aperiam sequi autem dolorum. Deleniti itaque laboriosam quis. Possimus.</p>
+                        <div class="preview-image">
+                            <div class="bg-preview-image">
+                                <p>preview</p>
+                                <img id="background-preview" >
+                            </div>
+                            <div class="profile-preview-image">
+                                <img id="profile-preview">
+                            </div>
                         </div>
-                    </div>
-                    <div class="step step-image">
-                        <img src="./assets/img/1 (1).png" alt="">
+                        <div class="step-desc upload-container">
+                            <div>
+                                <label for="file-img">Upload Image</label>
+                                <input type="file" id="file-img"
+                                accept="image/*" onchange="showPreview(event);">
+                            </div>
+                            <div>
+                                <label for="bg-img">Upload Background</label>
+                                <input type="file" id="bg-img"
+                                accept="image/*" onchange="showBgPreview(event);">
+                            </div>
+
+                        </div>
                     </div>
 
                 </div>
             </section>
             <style>
-             
-            </style>
-            <section class="section-container big-market-sct" id="how-to-sell">
-                <div class="step-to-sell">
-                    <div class="step step-image">
-                        <img src="./assets/img/1 (1).png" alt="">
-                    </div>
-                    <div class="step big-market">
-                        <p>Becoming the</p>
-                        <h1>Biggest NFT Marketplace in Indonesia</h1>
-                    </div>
-                    
-
-                </div>
-            </section>
-
-            <section class="section-container big-market-sct" id="how-to-sell">
-                <div class="step-to-sell">
-                    <div class="step big-market" id="business-background">
-                        <p>Business</p>
-                        <h1 style="margin: 0;">Background</h1>
-                        <div class="bg-text" style="padding: 1rem;">
-                            <p style="font-size: 1rem;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur 
-                                rem quaerat debitis omnis neque corrupti in, amet et sequi pariatur, ad animi assumenda eveniet. Ut repellat deleniti veritatis quis perspiciatis.</p>
-                            <br>
-                            <p style="font-size: 1rem;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur 
-                                rem quaerat debitis omnis neque corrupti in, amet et sequi pariatur, ad animi assumenda eveniet. Ut repellat deleniti veritatis quis perspiciatis.</p>
-                        </div>
-                    </div>
-                    <div class="step step-image">
-                        <img src="./assets/img/1 (1).png" alt="">
-                    </div>
-                    
-
-                </div>
-            </section>
-
-            <section class="section-container team-sct" id="how-to-sell">
-                <h1 style="text-align: center;">Our Team</h1>
-                <div class="step-to-sell our-team-sect">
-                    <div class="step team-1">
-                        <div>
-                            <img class="team-photo" src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/26e07f/external-wallet-interface-kiranshastry-lineal-kiranshastry-1.png"/>
-                        </div>
-                        <div class="step-desc">
-                            <strong>Gabriel Allba Shemi Yuma</strong>
-                            <p>CTO</p>
-                        </div>
-                    </div>
-                    <div class="step team-2">
-                        <div>
-                            <img class="team-photo" src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/26e07f/external-wallet-interface-kiranshastry-lineal-kiranshastry-1.png"/>
-                        </div>
-                        <div class="step-desc">
-                            <strong>Rayzel Hiu</strong>
-                            <p>CEO</p>
-                        </div>
-                    </div>
-                    <div class="step team-2">
-                        <div>
-                            <img class="team-photo" src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/26e07f/external-wallet-interface-kiranshastry-lineal-kiranshastry-1.png"/>
-                        </div>
-                        <div class="step-desc">
-                            <strong>Aloysius G. Seto</strong>
-                            <p>CFO</p>
-                        </div>
-                    </div>
+                .preview-image{
+                    width: 100%;
+                    height: 20rem;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
+                    outline: none;
+                }
+                .bg-preview-image,
+                .profile-preview-image{
+                    position: absolute;
+                    overflow: hidden;
+                    top: 0;
+                    width: 95%;
+                    height: 15rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 2px dashed grey;
+                }
                 
-                    
-                </div>
-                <div class="quotes">
-                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quam incidunt animi blanditiis, pariatur similique facilis, totam, nemo
-                        iusto harum eius! Nobis dolorem recusandae rem eos sapiente non fugiat molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi rem earum adipisci maxime libero ad nemo atque quas sit, obcaecati animi provident ducimus. Quis repellendus mollitia quam ullam, similique porro?</p>
-                </div>
-            </section>
+                .bg-preview-image > p{
+                    font-family: 'Montserrat-Regular';
+                    font-size: 2rem;
+                    color: rgb(123, 123, 123);
+                }
+                .profile-preview-image{
+                    background: #222222;
+                    top: 75%;
+                    width: 112px;
+                    max-width: 112px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 112px;
+                    transform: translateY(-50%);
+                    border-radius: 50%;
+                    padding: .5rem;
+                }
+                #profile-preview{
+                    border-radius: 50%;
+                    max-width: 112px;
+                }
+                .upload-container,
+                .upload-container input{
+                    font-family: 'Montserrat-Regular';
+                }
+                .upload-container{
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                .upload-container > div{
+                    display: flex;
+                    flex-direction: column;
+                    padding: .5rem;
+                    margin: .5rem;
+                }
+                input[type="file"]{
+                    outline: none;
+                    margin-top: .5rem;
+                    border: none;
+                }
+            </style>
+            <script type="text/javascript">
+                function showPreview(event){
+                  let src = URL.createObjectURL(event.target.files[0]);
+                  let profilePreview = document.getElementById("profile-preview");
+                  profilePreview.src = src;
+                  profilePreview.style.display = "block";
 
+                  let imgContainer = document.getElementsByClassName('profile-preview-image')[0]
+                  imgContainer.style.border = 'none'
+              }
+
+              function showBgPreview(event){
+                  let src = URL.createObjectURL(event.target.files[0]);
+                  let backgroundPreview = document.getElementById("background-preview");
+                  backgroundPreview.src = src;
+                  backgroundPreview.style.display = "block";
+                  let imgContainer = document.getElementsByClassName('bg-preview-image')[0]
+                  imgContainer.style.border = 'none'
+
+              }
+              </script>
 
             <footer class="section-container">
                 <div class="foot-top">
@@ -233,269 +256,55 @@
                     </div>
                 </div>
             </footer>
-            <div class="cont-bg"></div>
         </div>
         
         <div class="outside"></div>
        
         <script src="./assets/js/index.js" type="text/javascript"></script>
         <style>
-            
             #how-to-sell{
                 display: flex;
                 flex-direction: column;
+                align-items: center;
                 color: rgb(233, 233, 233);
                 padding: 1rem;
             }
             .step > div > img{
                 width: 4rem;
             }
-            .step > h1{
-                font-size: 5rem;
-                text-align: start;
-                margin-top: 1rem;
-                margin-bottom: 1rem;
-            }
             .step-to-sell{
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-gap: 1rem;
+                min-height: 20rem;
                 align-items: center;
-                
-            }
-            .about-us-sct > .step-to-sell{
-                align-items: flex-start;
-            }
-            .about-us-sct > .step-to-sell > .step:first-child{
-                align-items: flex-start;
-                margin-top: 3rem;
             }
             @media only screen and (max-width: 768px) {
                 .step-to-sell{
                     grid-template-columns: 1fr;
                 }
-                .about-us-sct > .step-to-sell > .step:first-child{
-                align-items: flex-start;
-                margin-top: 1rem;
             }
+            @media only screen and (max-width: 576px) {
+                .step-to-sell{
+                    grid-template-columns: 1fr;
+                }
             }
-            .bg{
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                left: 0;
-                top: 0;
-                border-radius: 8px;
-                z-index: -1;
-            }
-
             .step{
+                background: #222222;
+                border-radius: 8px;
                 padding: 1rem;
                 height: max-content;
                 transition: .2s ease-in-out;
             }
-            .step-desc{
-                border-radius: 34px;
-                border-radius: 8px;
-            }
             .step > div:first-child{
                 margin-bottom: .5rem;
             }
-            .step:hover{
-                transform: translateY(-3%);
-                transition: .2s ease-in-out;
-            }
+
             .step-desc > p{
                 margin-top: .2rem;
-                color: rgb(216, 216, 216);
-            }
-            .step > img{
-                max-width: 100%;
-            }
-            .step-image{
-                align-self: flex-end;
-                justify-self: center;
-                position: relative;
-                margin-top: 6rem;
-            }
-            .about-us-sct .step-image img{
-                width: 25rem;
-            }
-            .about-us-sct .step-image::after{
-                position: absolute;
-                content: '';
-                width: 15rem;
-                height: 35rem;
-                left: 0;
-                z-index: -1;
-                background: linear-gradient(to top, #121619,#1f023b,#49088a, #1f023b,#121619);
-                border-radius:10px;
-                bottom: 0;
-            }
-            .about-us-sct .step-image::before{
-                position: absolute;
-                content: '';
-                width: 10rem;
-                height: 35rem;
-                left: 60%;
-                bottom: 0;
-                z-index: -1;
-                background: linear-gradient(to top, #121619,#23042b,#74088a,#23042b, #121619);
-                border-radius:10px;
-            }
-            .step:hover{
-                transform: translate(0);
-            }
-
-            @media only screen and (max-width: 576px){
-                .step > h1{
-                    text-align: center;
-                    font-size: 3rem;
-                }
-                .step-desc > p{
-                    text-align: center;
-                }
-                .about-us-sct .step-image{
-                    display: none;
-                }
-            }
-            .big-market{
-                padding-right: 6rem;
-            }
-            .big-market > p{
-                font-size: 2rem;
-                text-align: end;
-            }
-            .big-market > h1{
-                text-align: end;
-                font-size: 4rem;
-            }
-            #how-to-sell > h1{
-                font-size: 4rem;
-            }
-            .our-team-sect{
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-            }
-            @media only screen and (max-width: 576px) {
-                .our-team-sect{
-                display: grid;
-                grid-template-columns: 1fr;
-            }   
-            
-            .big-market{
-                padding: 0;
-            }
-            .big-market > h1,
-            .big-market > p{
-                text-align: center;
-            }
-            .big-market > h1{
-                font-size: 3rem;
-            }
-            }
-            @media only screen and (max-width: 385px) {
-                .big-market > p{
-                    font-size: 1.5rem;
-                }
-                .big-market > h1{
-                    font-size: 2rem;
-                }
-            }
-            .our-team-sect > div > div:first-child{
-                background: rgb(58, 58, 58);
-                border-radius: 8px;
-                position: relative;
-                width: 100%;
-                height: 10rem
-            }
-            .our-team-sect > div > div:last-child{
-                margin-top: 2rem;
-            }
-            .team-photo{
-                position: absolute;
-                bottom: -20%;
-                left: 50%;
-                transform: translateX(-50%);
-            }
-            .team-1,
-            .team-2,
-            .team-3,
-            .quotes{
-                text-align: center;
-            }
-            .quotes{
-                color: rgb(232, 232, 232);
-                width: 70%;
-                margin: auto;
-                margin-top: 2rem;
-                padding-bottom: 5rem;
-            }
-            .about-us-title-step{
-                position: relative
-            }
-            .about-us-title-step::after{
-                position: absolute;
-                content: '';
-                width: 15%;
-                height: 5px;
-                left: 0;
-                bottom: -10%;
-                z-index: -1;
-                border-radius:10px;
-                background: rgb(202, 202, 202);
-            }
-            .about-us-sct p:first-child{
-                margin-top: 2rem;
-            }
-            @media only screen and (max-width: 576px) {
-                .about-us-title-step::after{
-                    width: 100%;
-                    height: 2px;
-                bottom: -25%;
-                }
-                .step-image{
-                    margin-top: 0;
-                }
-            }
-            #business-background{
-                padding-right: 0;
-                padding-left: 5rem;
-            }
-            #business-background p,
-            #business-background h1{
-                text-align: start;
-            }
-           
-            .bg-text{
-                position: relative;
-            }
-            .bg-text::after{
-                    position: absolute;
-                    content: '';
-                    width: 1px;
-                    height: 100%;
-                    left: -5%;
-                    top: 0;
-                    z-index: -1;
-                    border-radius:16px;
-                    background: rgb(155, 155, 155);
-                }
-            @media only screen and (max-width: 576px) {
-                #business-background{
-                    padding-left: 0;
-                }
-                #business-background p,
-                    #business-background h1{
-                        position: relative;
-                        text-align: center;
-                    }
-                    .bg-text::after{
-                        display: none;
-                    }
+                color: rgb(228, 228, 228);
             }
         </style>
-
         <script>
             let itemsAct1 = document.getElementById('it-1');
             let itemsAct2 = document.getElementById('it-2');

@@ -106,7 +106,17 @@ nav form{
     padding: .2rem .5rem;
     height: 1.7rem;
     overflow: hidden;
-    width: 50%;
+    width: 40%;
+}
+@media only screen and (max-width: 1080px){
+    nav form{
+        width: 20%;
+    }
+}
+@media only screen and (max-width:827px) {
+    nav form{
+        width: 10%;
+    }    
 }
 nav form input{
     border: none;
@@ -164,11 +174,12 @@ form button svg{
     color: rgb(189, 189, 189); 
     border: 1px solid rgb(65, 65, 65); border-radius: 5px;
 }
-.wallet-dropdown{
-    left: -100%;
-}
+
 .dropdown-link{
     position: relative;
+}
+.wallet-dropdown{
+    left: 0;
 }
 .dropdown-link > a,
 .wallet-dropdown > p,
@@ -210,6 +221,7 @@ form button svg{
     transform: translateY(0);
     transition: .2s ease-in-out;
 }
+
 .hamburger-container{
     background: none;
     padding: .8rem .5rem;
@@ -277,8 +289,8 @@ form button svg{
         
     }
 
-    form{
-        width: 40%;
+    nav form{
+        width: 100%;
     }
     .hamburger-container{
         display: block;
@@ -298,7 +310,7 @@ form button svg{
     .dropdown{
         display: flex;
         opacity: 0;
-        transform: translateY(-10px);
+        transform: translateY(0px) translateX(100px);
         flex-direction: column;
         position: initial;
         width: 90%;
@@ -695,7 +707,7 @@ table tr:first-child th{
     }
     .sim-image-container .pp img{
         max-width: 2rem;
-        border-radius: 50%;
+        border-radius: 20%;
     }
     .desciption-item{
         display: flex;
@@ -921,9 +933,6 @@ footer form input[type='submit']:hover{
 .account-title{
     margin-bottom: .5rem;
 }
-.owner{
-    color: rgb(255, 16, 120);
-}
 .account-title > h2{
     margin-bottom: 0;
 }
@@ -1071,6 +1080,7 @@ footer form input[type='submit']:hover{
     overflow: auto;
     background: #222222;
 }
+
 img[src="./assets/img/eth-icon.png"]{
     width: 1.5rem;
 }
