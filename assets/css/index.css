@@ -22,7 +22,7 @@ body{
     margin: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-    background: #131313;
+    background: #141316;
 }
 p{
     font-family: 'Montserrat-Regular';
@@ -48,7 +48,7 @@ li{
     list-style: none;
 }
 .small-p{
-    color: grey;
+    color: rgb(158, 158, 158);
     font-size: .8rem;
 }
 a{
@@ -71,10 +71,12 @@ nav{
     align-items: center;
     z-index: 1;
     color: white;
-    background: #131313;
+    background: #141316;
+    border-bottom: 1px solid rgb(61, 61, 61);
 }
 nav > div,
 nav > div > a{
+    font-size: .6rem;
     display: flex;
     align-items: center;
     margin-right: .5rem;
@@ -91,8 +93,13 @@ nav div img{
 } 
 #main-navbar > li > a{
     font-family: 'Montserrat-Regular';
-    color: rgb(226, 226, 226);
+    font-size: .8rem;
+    color: rgb(158, 158, 158);
     transition: .2s ease-in-out  ;
+}
+#main-navbar > li:last-child > a{
+    color: white
+
 }
 #main-navbar > li > a:hover{
     color: rgb(255, 255, 255);
@@ -105,12 +112,13 @@ nav div img{
 }
 nav form{
     display: flex;
-    border-radius: .5rem;
-    background-color: #222222;
+    border-radius: 5rem;
+    background: none;
     padding: .2rem .5rem;
     height: 1.7rem;
     overflow: hidden;
     width: 40%;
+    border: 1px solid rgb(48, 47, 49);
 }
 @media only screen and (max-width: 1080px){
     nav form{
@@ -128,15 +136,7 @@ nav form input{
     color: rgb(167, 167, 167);
     width: 100%;
 }
-::placeholder{
-    color: white;
-}
-:-ms-input-placeholder{
-    color: white;
-}
-::-ms-input-placeholder{
-    color: white;
-}
+
 form button{
     background: none;
     border: none;
@@ -147,7 +147,19 @@ form button svg{
 
 #search{
     background: #222222;
+    background: none;
 }
+::placeholder {
+    color: rgb(104, 104, 104);
+}
+
+:-ms-input-placeholder { 
+    color: rgb(80, 80, 80);
+}
+
+::-ms-input-placeholder {
+    color: rgb(80, 80, 80);
+  }
 .nav-link{
     position: relative;
     padding: 1rem;
@@ -183,7 +195,7 @@ form button svg{
     position: relative;
 }
 .wallet-dropdown{
-    left: 0;
+    left: -2rem;
 }
 .dropdown-link > a,
 .wallet-dropdown > p,
@@ -193,6 +205,7 @@ form button svg{
     transition: .2s ease-in-out;
     align-items: center;
     color: rgb(226, 226, 226);
+    font-size: .8rem;
 }
 .wallet-dropdown > p,
 .dropdown > p{
@@ -277,13 +290,15 @@ form button svg{
         /* display: flex;
         flex-direction: column;
         justify-content: center; */
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         position: fixed;
         top:4.5rem;
         height: 70%;
         width: 30%;
         right: -100%;
-        margin: 0;
+        margin: 1;
         border-radius: 5px;
         transition: .4s ease-in-out;
         background: #121619;
@@ -295,6 +310,9 @@ form button svg{
 
     nav form{
         width: 100%;
+    }
+    nav.section-container{
+        padding: 1rem;
     }
     .hamburger-container{
         display: block;
@@ -353,9 +371,7 @@ form button svg{
     }
 }
 @media only screen and (max-width: 576px) {
-    nav.section-container{
-        padding: 1rem;
-    }
+    
    
     nav div h1{
         font-size: 1rem;
@@ -812,7 +828,7 @@ table tr:first-child th{
       min-height: 30rem;
   }
   footer strong{
-    color: #34d07f;
+    color: #2ca879;
 }
 
   footer > div > div > ul > li{
@@ -861,11 +877,11 @@ footer form input[type='submit']{
     min-width: 7rem;
     outline: none;
     transition: .2s ease-in-out;
-    background: #34d07f;
+    background: #2ca879;
 }
 footer form input[type='submit']:hover{
     background: transparent;
-    border: 1.5px solid #34d07f;
+    border: 1.5px solid #2ca879;
     cursor: pointer;
     transition: .2s ease-in-out;
     min-width: 7rem;
@@ -1067,7 +1083,7 @@ footer form input[type='submit']:hover{
     height: 3px ;
     bottom: -2px ;
     left: 0 ;
-    background-color: rgb(18, 207, 150);
+    background-color: #2ca879;
 }
 .account-collection-content{
     display: grid;
@@ -1197,7 +1213,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .filter-active{
-    background-color: rgb(16, 211, 169) !important;
+    background-color: #2ca879!important;
     color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
@@ -1346,8 +1362,8 @@ input[type=number]::-webkit-outer-spin-button {
     display: flex !important;
 }
 .filter-cat-active{
-    border: 1.5px solid rgb(16, 211, 169) !important;
-    background: rgb(16, 211, 169) !important;
+    border: 1.5px solid #2ca879 !important;
+    background: #2ca879 !important;
     transition: .2s ease-in-out;
 }
 .offers-time-openner{

@@ -20,11 +20,11 @@
                 </div>
                 <form action="" class="" id="search-form">
                     <button type="submit">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" stroke="rgb(158,158,158)">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                           </svg>
                     </button>
-                    <input type="text" placeholder="Search..." name="search" id="search" style="color: white;">
+                    <input type="text" placeholder="Search..." name="search" id="search">
                 </form>
                 <ul id="main-navbar">
                     <li class='nav-link'>
@@ -88,7 +88,9 @@
                         <div class="preview-image">
                             <div class="bg-preview-image">
                                 <p id="prev-text">preview</p>
-                                <img id="background-preview" >
+                                <div class="bg-prev-container">
+                                    <img id="background-preview" >
+                                </div>
                             </div>
                             <div class="profile-preview-image">
                                 <div class="prof-prev-container">
@@ -98,12 +100,12 @@
                         </div>
                         <div class="step-desc upload-container">
                             <div>
-                                <label for="file-img">Profile Image</label>
+                                <label for="file-img"><strong>Profile Image</strong></label>
                                 <input type="file" id="file-img"
                                 accept="image/*" onchange="showPreview(event);">
                             </div>
                             <div>
-                                <label for="bg-img">Collection Background</label>
+                                <label for="bg-img"><strong>Collection Background</strong></label>
                                 <input type="file" id="bg-img"
                                 accept="image/*" onchange="showBgPreview(event);">
                             </div>
@@ -115,11 +117,11 @@
                         <form action="">
                             <div>
                                 <label for="col-name"><strong>Collection Name</strong></label>
-                                <input id="col-name" type="text" placeholder="Example: CryptoPunk">
+                                <input id="col-name" type="text" placeholder="Example: CryptoPunk" required>
                             </div>
                             <div>
                                 <label for="col-description"><strong>Description</strong></label>
-                                <textarea placeholder="Description about your collection" name="" id="col-description" cols="30" rows="5"></textarea>
+                                <textarea required placeholder="Description about your collection" name="" id="col-description" cols="30" rows="5"></textarea>
                             </div>
                             <div style="margin-top: 1rem; display: flex; flex-direction: column; align-items: flex-start;">
                                 <strong>Category</strong>
@@ -190,12 +192,24 @@
                                 <p style="margin-top: .5rem;" class="small-p">Persentase pajak ketika pembeli melakukan penjualan kembali terhadap
                                     barang yang anda buat <strong>(%)</strong>.
                                 </p>
-                                <input id="col-tax" type="number" placeholder="2.5">
+                                <input id="col-tax" type="number" placeholder="Default: 2.5">
+                            </div>
+                            <div>
+                                <input type="submit" value="Create">
                             </div>
                         </form>
                     </div>
                     <style>
-                        
+                        .step > form > div > input[type="submit"]{
+                            font-family: 'Montserrat-Bold';
+                            font-size: 1.2rem;
+                            cursor: pointer;
+                            transition: .3s ease-in-out;
+                        }
+                        .step > form > div > input[type="submit"]:hover{
+                            transform: translateY(-4%);
+                            transition: .3s ease-in-out;
+                        }
                         .creator-socmed{
                             flex-direction: column;
                         }
@@ -235,6 +249,9 @@
                             margin: .5rem;
                             justify-content: space-between;
                             background: #383838;
+                        }
+                        .category-area > div > p{
+                            font-size: .8rem;
                         }
                     </style>
                     <script>
@@ -321,7 +338,7 @@
                     position: absolute;
                     overflow: hidden;
                     top: 0;
-                    width: 95%;
+                    width: 97%;
                     height: 15rem;
                     display: flex;
                     justify-content: center;
@@ -356,12 +373,14 @@
                     justify-content: center;
                     overflow: hidden;
                 }
-                #profile-preview,
-                #bg-preview{
-                    width: 100%;
-                }
-                #bg-preview{
+                .bg-prev-container{
                     max-width: 100%;
+                    overflow: hidden;
+                    max-height: 15rem;
+                }
+                #profile-preview,
+                #background-preview{
+                    width: 100%;
                 }
                 .upload-container,
                 .upload-container input{
@@ -389,7 +408,7 @@
                     
                 }
                 input[type="file"]::file-selector-button{
-                    background: rgb(2, 179, 102);
+                    background: rgb(29, 153, 110);
                     outline: none;
                     border: none;
                     border-radius: 5px;
@@ -515,7 +534,6 @@
                 }
             }
             .step{
-                background: #1d1c1c;
                 border-radius: 8px;
                 padding: 1rem;
                 height: max-content;
