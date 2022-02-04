@@ -87,21 +87,23 @@
                     <div class="step">
                         <div class="preview-image">
                             <div class="bg-preview-image">
-                                <p>preview</p>
+                                <p id="prev-text">preview</p>
                                 <img id="background-preview" >
                             </div>
                             <div class="profile-preview-image">
-                                <img id="profile-preview">
+                                <div class="prof-prev-container">
+                                    <img id="profile-preview">
+                                </div>
                             </div>
                         </div>
                         <div class="step-desc upload-container">
                             <div>
-                                <label for="file-img">Upload Image</label>
+                                <label for="file-img">Profile Image</label>
                                 <input type="file" id="file-img"
                                 accept="image/*" onchange="showPreview(event);">
                             </div>
                             <div>
-                                <label for="bg-img">Upload Background</label>
+                                <label for="bg-img">Collection Background</label>
                                 <input type="file" id="bg-img"
                                 accept="image/*" onchange="showBgPreview(event);">
                             </div>
@@ -109,9 +111,202 @@
                         </div>
                     </div>
 
+                    <div class="step">
+                        <form action="">
+                            <div>
+                                <label for="col-name"><strong>Collection Name</strong></label>
+                                <input id="col-name" type="text" placeholder="Example: CryptoPunk">
+                            </div>
+                            <div>
+                                <label for="col-description"><strong>Description</strong></label>
+                                <textarea placeholder="Description about your collection" name="" id="col-description" cols="30" rows="5"></textarea>
+                            </div>
+                            <div style="margin-top: 1rem; display: flex; flex-direction: column; align-items: flex-start;">
+                                <strong>Category</strong>
+                                <div style="margin-top: .5rem; display: flex; justify-content: space-between;width: 100%; align-items: center;">
+                                    <div style="position: relative; width: 48%;">
+                                        <div class="offers-time-openner">
+                                            <p id="offers-time">Add Category</p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                              </svg>
+                                        </div>
+                                        <div class="time-container">
+                                            <div class="anime">Anime</div>
+                                            <div class="animal">Animal</div>
+                                            <div class="nature">Nature</div>
+                                            <div class="abstract">Abstract</div>
+                                        </div>
+                                    </div>
+                                    <div class="category-area">
+                                        <div class="anime">
+                                            <p>Anime</p>
+                                            <svg class="cancel-category" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                              </svg>
+                                        </div>
+                                        <div class="animal">
+                                            <p>Animal</p>
+                                            <svg class="cancel-category" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                              </svg>
+                                        </div>
+                                        <div class="nature">
+                                            <p>Nature</p>
+                                            <svg class="cancel-category" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                              </svg>
+                                        </div>
+                                        <div class="abstract">
+                                            <p>Abstract</p>
+                                            <svg class="cancel-category" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                              </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="creator-socmed">
+                                    <strong>Links</strong>
+                                    <div>
+                                        <div>
+                                            <img src="https://img.icons8.com/ios/50/ffffff/instagram-new--v1.png"/>
+                                            <input type="text" placeholder="Your Instagram collection">
+                                        </div>
+                                        <div>
+                                            <img src="https://img.icons8.com/ios/50/ffffff/twitter--v1.png"/>
+                                            <input type="text" placeholder="Your Twitter collection">
+                                        </div>
+                                        <div>
+                                            <img src="https://img.icons8.com/fluency-systems-regular/48/ffffff/line-me.png"/>
+                                            <input type="text" placeholder="Your Line collection">  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="col-tax"><strong>Creator Earnings</strong></label>
+                                <p style="margin-top: .5rem;" class="small-p">Persentase pajak ketika pembeli melakukan penjualan kembali terhadap
+                                    barang yang anda buat <strong>(%)</strong>.
+                                </p>
+                                <input id="col-tax" type="number" placeholder="2.5">
+                            </div>
+                        </form>
+                    </div>
+                    <style>
+                        
+                        .creator-socmed{
+                            flex-direction: column;
+                        }
+                        .creator-socmed > div{
+                            margin-top: .5rem;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                        }
+                        .creator-socmed > div > div{
+                            display: flex;
+                            align-items: center;
+                        }
+                        .creator-socmed > div > div:not(:first-child){
+                            margin-top: .5rem;
+                        }
+                        .creator-socmed > div > div > img{
+                            width: 1.5rem;
+                            margin-right: .3rem;
+                        }
+                        .cancel-category,
+                        .time-container > div{
+                            cursor: pointer;
+                        }
+                        .time-container > div{
+                            padding: .5rem 1rem;
+                        }
+                        .category-area{
+                            display: flex;
+                            flex-wrap: wrap;
+                        }
+                        .category-area > div{
+                            display: none;
+                            align-items: center;
+                            padding: .5rem 1rem;
+                            border-radius: 5px;
+                            margin: .5rem;
+                            justify-content: space-between;
+                            background: #383838;
+                        }
+                    </style>
+                    <script>
+                        let offerTime = document.getElementById('offers-time')
+                        let timeContainer = document.getElementsByClassName('time-container')[0]
+                        let offersTimeOpenner = document.getElementsByClassName('offers-time-openner')[0]        
+                        let categoryArea = document.getElementsByClassName('category-area')[0]
+                        for(let i = 0; i < timeContainer.children.length; i++){
+                            timeContainer.children[i].addEventListener('click', () => {
+                                timeContainer.classList.remove('open-modal')
+                                for(let x = 0; x < categoryArea.children.length; x++){
+                                    if(timeContainer.children[i].className == categoryArea.children[x].className){
+                                        categoryArea.children[x].classList.add('show-category')        
+                                    }
+                                }
+                            })
+                        }
+                        offersTimeOpenner.addEventListener('click', () => {
+                            timeContainer.classList.toggle('open-modal')
+                        })
+
+                        let cancelCategory = document.getElementsByClassName('cancel-category')
+                        for(let i = 0; i < cancelCategory.length; i++){
+                            cancelCategory[i].addEventListener('click', () => {
+                                cancelCategory[i].parentNode.classList.remove('show-category')
+                            })
+                        }
+                    </script>
                 </div>
             </section>
             <style>
+                .step > form{
+                    font-family: 'Montserrat-Regular';
+                    display: flex;
+                    padding: 1rem;
+                    flex-direction: column;
+                }
+                .step > form > div{
+                    display: flex;
+                    flex-direction: column;
+                }
+                .step > form > div:not(:first-child){
+                    margin-top: 1rem;
+                }
+                .step > form > div > input,
+                .step > form >div > textarea,
+                .creator-socmed > div > div > input{
+                    border-radius: 8px;
+                    outline: none;
+                    border: none;
+                    margin-top: .5rem;
+                    background: rgb(41, 41, 41);
+                    font-family: 'Montserrat-Regular';
+                    padding: .5rem;
+                    color: rgb(187, 187, 187);
+                }
+                .creator-socmed > div > div > input{
+                    margin-top: 0;
+                    width: 100%;
+                }
+                .step > form > div > textarea{
+                    resize: none;
+                }
+                ::placeholder{
+                    color: rgb(162, 162, 162);
+                }
+                :-ms-input-placeholder{
+                    color: rgb(162, 162, 162);
+                }
+                ::-ms-input-placeholder{
+                    color: rgb(162, 162, 162);
+                }
                 .preview-image{
                     width: 100%;
                     height: 20rem;
@@ -144,17 +339,30 @@
                     top: 75%;
                     width: 112px;
                     max-width: 112px;
+                    max-height: 112px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    height: 112px;
                     transform: translateY(-50%);
                     border-radius: 50%;
                     padding: .5rem;
                 }
-                #profile-preview{
+                .prof-prev-container{
                     border-radius: 50%;
                     max-width: 112px;
+                    max-height: 112px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    overflow: hidden;
+                    background-color: orange;
+                }
+                #profile-preview,
+                #bg-preview{
+                    width: 100%;
+                }
+                #bg-preview{
+                    max-width: 100%;
                 }
                 .upload-container,
                 .upload-container input{
@@ -168,19 +376,34 @@
                     display: flex;
                     flex-direction: column;
                     padding: .5rem;
+                    width: max-content;
                     margin: .5rem;
                 }
                 input[type="file"]{
-                    outline: none;
                     margin-top: .5rem;
+                }
+                @media only screen and (max-width: 380px) {
+                    input[type="file"]{
+                        max-width:13rem;
+                        overflow: hidden;
+                    }
+                    
+                }
+                input[type="file"]::file-selector-button{
+                    background: rgb(2, 179, 102);
+                    outline: none;
                     border: none;
+                    border-radius: 5px;
+                    color: white;
+                    padding: .5rem 1rem;
+
                 }
             </style>
             <script type="text/javascript">
                 function showPreview(event){
-                  let src = URL.createObjectURL(event.target.files[0]);
+                  let imageSource = URL.createObjectURL(event.target.files[0]);
                   let profilePreview = document.getElementById("profile-preview");
-                  profilePreview.src = src;
+                  profilePreview.src = imageSource;
                   profilePreview.style.display = "block";
 
                   let imgContainer = document.getElementsByClassName('profile-preview-image')[0]
@@ -188,12 +411,16 @@
               }
 
               function showBgPreview(event){
-                  let src = URL.createObjectURL(event.target.files[0]);
+                  let imageSource = URL.createObjectURL(event.target.files[0]);
                   let backgroundPreview = document.getElementById("background-preview");
-                  backgroundPreview.src = src;
+                  backgroundPreview.src = imageSource;
                   backgroundPreview.style.display = "block";
+
                   let imgContainer = document.getElementsByClassName('bg-preview-image')[0]
                   imgContainer.style.border = 'none'
+
+                  let prevText = document.getElementById('prev-text')
+                  prevText.style.display = 'none'
 
               }
               </script>
@@ -274,10 +501,9 @@
             }
             .step-to-sell{
                 display: grid;
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: 1fr 1fr;
                 grid-gap: 1rem;
                 min-height: 20rem;
-                align-items: center;
             }
             @media only screen and (max-width: 768px) {
                 .step-to-sell{
@@ -290,7 +516,7 @@
                 }
             }
             .step{
-                background: #222222;
+                background: #1d1c1c;
                 border-radius: 8px;
                 padding: 1rem;
                 height: max-content;

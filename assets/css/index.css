@@ -47,6 +47,10 @@ h2{
 li{
     list-style: none;
 }
+.small-p{
+    color: grey;
+    font-size: .8rem;
+}
 a{
     text-decoration: none;
     font-family: 'Montserrat-Regular';
@@ -595,6 +599,9 @@ svg{
 }
 .show-accordion{
     display: flex;
+}
+.show-category{
+    display: flex !important;
 }
 .hide-accordion{
     display: none !important;
