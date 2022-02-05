@@ -102,7 +102,38 @@
                     grid-template-columns: 1fr 1fr;
                     align-items: center;
                     position: relative;
+                    min-height: 80vh;
                 }
+                .about-us-sct{
+                    position: relative;
+                    min-height: 100vh;
+                }
+                #top-section::after,
+                .about-us-sct::after,
+                .big-market-sct::after{
+                    content: '';
+                    position: absolute;
+                   width: 100%;
+                   height: 100%;
+                   z-index: -1;
+                   top: 50%;
+                   background: radial-gradient(circle, rgba(13, 54, 61, 0.35) 5%, rgba(20, 19, 22, 0.493) 90%);
+                   transform: translate(-50%, -50%);
+                   left: 50%;
+                   filter: blur(10px);
+               }
+                /* #top-section::after{
+                    content: '';
+                    position: absolute;
+                    width: 400px;
+                    height: 400px;
+                    background: rgba(51, 51, 51, 0.213);
+                    border-radius: 50%;
+                    z-index: -1;
+                    top: -40%;
+                    left:40%;
+
+                } */
                 #top-section > #h1-top-container{
                     z-index: 0;
                     display: flex;
@@ -131,10 +162,24 @@
                 }
                 #img-container{
                     max-width: 100%;
+                    position: relative;
                 }
+               
                 #img-container > img{
-                    width: 100%;
+                    width:50rem;
                     height: auto;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                @media only screen and (max-width: 768px) {
+                    #top-section{
+                        grid-template-columns: 1fr;
+                    }
+                    #img-container{
+                        display: none;
+                    }
                 }
             </style>
             <section class="section-container about-us-sct" id="how-to-sell">
@@ -299,12 +344,23 @@
             .section-container{
                 color: white;
             }
+            .big-market-sct,
+            .team-sct{
+                min-height: 100vh;
+                position: relative;
+                align-items: center;
+                justify-content: center;
+            }
+            .big-market-sct{
+                display: flex;
+            }
             .top-img{
                 position: absolute;
             }
             #how-to-sell{
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
                 color: rgb(233, 233, 233);
                 padding: 0 2rem;
             }
@@ -325,6 +381,7 @@
                 grid-template-columns: repeat(2, 1fr);
                 grid-gap: 1rem;
                 align-items: center;
+                justify-content: center;
                 
             }
             .about-us-sct > .step-to-sell{
@@ -384,16 +441,16 @@
             .about-us-sct .step-image img{
                 width: 25rem;
             }
-            .about-us-sct .step-image::after{
+            /* .about-us-sct .step-image::after{
                 position: absolute;
                 content: '';
                 width: 15rem;
                 height: 35rem;
-                left: 0;
+                left: 9%;
                 z-index: -1;
-                background: linear-gradient(to top, #121619,#1f023b,#49088a, #1f023b,#121619);
+                background: linear-gradient(to top, #121619,#023b3a,#0c9e77, #023b3a,#121619);
                 border-radius:10px;
-                bottom: 0;
+                bottom: -20%;
             }
             .about-us-sct .step-image::before{
                 position: absolute;
@@ -401,11 +458,11 @@
                 width: 10rem;
                 height: 35rem;
                 left: 60%;
-                bottom: 0;
+                bottom: -20%;
                 z-index: -1;
-                background: linear-gradient(to top, #121619,#23042b,#74088a,#23042b, #121619);
+                background: linear-gradient(to top, #121619,#04252b,#11d4d1,#04252b, #121619);
                 border-radius:10px;
-            }
+            } */
             .step:hover{
                 transform: translate(0);
             }
@@ -497,7 +554,7 @@
                 bottom: -10%;
                 z-index: -1;
                 border-radius:10px;
-                background: rgb(202, 202, 202);
+                background: rgb(124, 124, 124);
             }
             .about-us-sct p:first-child{
                 margin-top: 2rem;
