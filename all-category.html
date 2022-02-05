@@ -97,21 +97,19 @@
                 </div>
                 <div class="trending">
                     <div class="trending-container">
-                        <a href="./product-page.html" class="similar-item trending-item">
+                        <div class="similar-item trending-item">
                             <div class="sim-image-container sim-image-container-product">
                                 <img src="./assets/img/trending-img.jpg" alt="">
                             </div>
-                            <div class="sim-item-price-title">
-                                <strong>Judul karya</strong>
-                            </div>
+                            
                             <div class="sim-description">
                                 <div class="sim-image-container description-item">
                                     <div class="pp">
                                         <img src="./assets/img/nft.jpg" alt="">
                                     </div>
                                     <div class="from-where">
-                                        <p>From</p>
-                                        <p>Crypto Punk</p>
+                                        <strong><a class="c-green" href="./product-page.html">Judul Karya</a></strong>
+                                        <p class="from-account">Crypto Punk</p>
                                     </div>
                                 </div>
                                 <div class="price-container">
@@ -121,66 +119,36 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="sim-description">
+                                <div class="sim-image-container sim-sale">
+                                    <p class="from-account">Sale Remaining Time</p>
+                                    <div class="date-end">
+                                        <div>
+                                            <strong class="c-green">5</strong>
+                                            <p class="from-account">Hours</p>
+                                        </div>
+                                        <div>
+                                            <strong class="c-green">20</strong>
+                                            <p class="from-account">Minutes</p>
+                                        </div>
+                                        <div>
+                                            <strong class="c-green">5</strong>
+                                            <p class="from-account">Seconds</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sim-description" style="border: none;">
+                               <button class="main-button open-make-offers-modal">
+                                   Make Offer
+                               </button>
+                            </div>
                             <div class="trending-tag">
                                 <p>On Trending</p>
                             </div>
-                        </a>    
+                        </div>    
                     </div>
                 </div>
-                <style>
-                    #discover-collection .trending{
-                        padding: .2rem;
-                     overflow: hidden;
-                       background: none;
-                    }
-                    .trending,
-                    .trending-container{
-                        display: flex;
-                        position: relative;
-                    }
-                    .trending-item{
-                        position: relative;
-                    }
-                    .trending-tag > p{
-                        font-family: 'Montserrat-Bold';
-                        font-size: 1rem;
-                    }
-                    .trending-tag{
-                        left: 2%;
-                        top:2%;
-                        position: absolute;
-                        padding: .5rem 1rem;
-                        text-align: center;
-                        border-radius: 5px;
-                        background: rgba(255, 255, 255, 0.2);
-                        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-                        backdrop-filter: blur(5px);
-                        -webkit-backdrop-filter: blur(5px);
-                        border: 1px solid rgba(255, 255, 255, 0.3);
-                    }
-                    .trending::before{
-                        content: '';
-                        position: absolute;
-                        width: 185%;
-                        height: 185%;
-                        left: -50%;
-                        top: -50%;
-                        background: conic-gradient(from 90deg, rgb(0 0 0/ 0%) 80%, rgba(10, 120, 223, 0.659) 0%, #2ca879 100%);
-                        animation: rotate 4s infinite linear;
-                    }
-                    @keyframes rotate{
-                        100%{
-                            transform: rotate(360deg);
-                        }
-                    } 
-                   
-                    .trending > a.similar-item:hover{
-                        transform: translateY(0);
-                    }
-                    .trending .sim-item-price-title strong{
-                        font-size: 1rem;
-                    }
-                </style>
             </section>
 
             <section class="account-collection-content switch-1" style="color: rgb(255, 255, 255); margin-top: 1rem;" id="discover-purpose">
@@ -250,21 +218,22 @@
                         <button onclick="filterOpen('another-category', this.id)" id="another-category" class="another-category">Another Category</button>
                     </div>
                     <div class="similar-content">
-                        <a href="./product-page.html" class="similar-item">
+                        <div class="similar-item">
                             <div class="sim-image-container sim-image-container-product">
                                 <img src="./assets/img/img-1.jpg" alt="">
+                                <div class="onsale">
+                                    <p>On Sale</p>
+                                </div>
                             </div>
-                            <div class="sim-item-price-title">
-                                <strong>Judul karya</strong>
-                            </div>
+                            
                             <div class="sim-description">
                                 <div class="sim-image-container description-item">
                                     <div class="pp">
                                         <img src="./assets/img/nft.jpg" alt="">
                                     </div>
                                     <div class="from-where">
-                                        <p>From</p>
-                                        <p>Crypto Punk</p>
+                                        <strong><a class="c-green" href="./product-page.html">Judul Karya</a></strong>
+                                        <p class="from-account">Crypto Punk</p>
                                     </div>
                                 </div>
                                 <div class="price-container">
@@ -273,232 +242,63 @@
                                         <strong>5 ETH</strong>
                                     </div>
                                 </div>
-                            </div>
-                        </a>                       
-                                          
-                        <a href="./product-page.html" class="similar-item">
-                            <div class="sim-image-container sim-image-container-product">
-                                <img src="./assets/img/img-2.jpg" alt="">
-                            </div>
-                            <div class="sim-item-price-title">
-                                <strong>Judul karya</strong>
+                                
                             </div>
                             <div class="sim-description">
-                                <div class="sim-image-container description-item">
-                                    <div class="pp">
-                                        <img src="./assets/img/nft.jpg" alt="">
-                                    </div>
-                                    <div class="from-where">
-                                        <p>From</p>
-                                        <p>Crypto Punk</p>
-                                    </div>
-                                </div>
-                                <div class="price-container">
-                                    <p>Price</p>
-                                    <div>
-                                        <strong>5 ETH</strong>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>                       
-                                          
-                        <a href="./product-page.html" class="similar-item">
-                            <div class="sim-image-container sim-image-container-product">
-                                <img src="./assets/img/img-3.jpg" alt="">
-                            </div>
-                            <div class="sim-item-price-title">
-                                <strong>Judul karya</strong>
-                            </div>
-                            <div class="sim-description">
-                                <div class="sim-image-container description-item">
-                                    <div class="pp">
-                                        <img src="./assets/img/nft.jpg" alt="">
-                                    </div>
-                                    <div class="from-where">
-                                        <p>From</p>
-                                        <p>Crypto Punk</p>
-                                    </div>
-                                </div>
-                                <div class="price-container">
-                                    <p>Price</p>
-                                    <div>
-                                        <strong>5 ETH</strong>
+                                <div class="sim-image-container sim-sale">
+                                    <p class="from-account">Sale Remaining Time</p>
+                                    <div class="date-end">
+                                        <div>
+                                            <strong class="c-green">5</strong>
+                                            <p class="from-account">Hours</p>
+                                        </div>
+                                        <div>
+                                            <strong class="c-green">20</strong>
+                                            <p class="from-account">Minutes</p>
+                                        </div>
+                                        <div>
+                                            <strong class="c-green">5</strong>
+                                            <p class="from-account">Seconds</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </a>                       
-                                          
-                        <a href="./product-page.html" class="similar-item">
-                            <div class="sim-image-container sim-image-container-product">
-                                <img src="./assets/img/img-4.jpg" alt="">
+                            <div class="sim-description" style="border: none;">
+                               <button class="main-button open-make-offers-modal">
+                                   Make Offer
+                               </button>
                             </div>
-                            <div class="sim-item-price-title">
-                                <strong>Judul karya</strong>
+                            <div class="trending-tag">
+                                <p>On Trending</p>
                             </div>
-                            <div class="sim-description">
-                                <div class="sim-image-container description-item">
-                                    <div class="pp">
-                                        <img src="./assets/img/nft.jpg" alt="">
-                                    </div>
-                                    <div class="from-where">
-                                        <p>From</p>
-                                        <p>Crypto Punk</p>
-                                    </div>
-                                </div>
-                                <div class="price-container">
-                                    <p>Price</p>
-                                    <div>
-                                        <strong>5 ETH</strong>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>                       
-                                    
-                        <a href="./product-page.html" class="similar-item">
-                            <div class="sim-image-container sim-image-container-product">
-                                <img src="./assets/img/img-1.jpg" alt="">
-                            </div>
-                            <div class="sim-item-price-title">
-                                <strong>Judul karya</strong>
-                            </div>
-                            <div class="sim-description">
-                                <div class="sim-image-container description-item">
-                                    <div class="pp">
-                                        <img src="./assets/img/nft.jpg" alt="">
-                                    </div>
-                                    <div class="from-where">
-                                        <p>From</p>
-                                        <p>Crypto Punk</p>
-                                    </div>
-                                </div>
-                                <div class="price-container">
-                                    <p>Price</p>
-                                    <div>
-                                        <strong>5 ETH</strong>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>                       
-                                          
-                        <a href="./product-page.html" class="similar-item">
-                            <div class="sim-image-container sim-image-container-product">
-                                <img src="./assets/img/img-2.jpg" alt="">
-                            </div>
-                            <div class="sim-item-price-title">
-                                <strong>Judul karya</strong>
-                            </div>
-                            <div class="sim-description">
-                                <div class="sim-image-container description-item">
-                                    <div class="pp">
-                                        <img src="./assets/img/nft.jpg" alt="">
-                                    </div>
-                                    <div class="from-where">
-                                        <p>From</p>
-                                        <p>Crypto Punk</p>
-                                    </div>
-                                </div>
-                                <div class="price-container">
-                                    <p>Price</p>
-                                    <div>
-                                        <strong>5 ETH</strong>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>                       
-                                          
-                        <a href="./product-page.html" class="similar-item">
-                            <div class="sim-image-container sim-image-container-product">
-                                <img src="./assets/img/img-3.jpg" alt="">
-                            </div>
-                            <div class="sim-item-price-title">
-                                <strong>Judul karya</strong>
-                            </div>
-                            <div class="sim-description">
-                                <div class="sim-image-container description-item">
-                                    <div class="pp">
-                                        <img src="./assets/img/nft.jpg" alt="">
-                                    </div>
-                                    <div class="from-where">
-                                        <p>From</p>
-                                        <p>Crypto Punk</p>
-                                    </div>
-                                </div>
-                                <div class="price-container">
-                                    <p>Price</p>
-                                    <div>
-                                        <strong>5 ETH</strong>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>                       
-                                          
-                        <a href="./product-page.html" class="similar-item">
-                            <div class="sim-image-container sim-image-container-product">
-                                <img src="./assets/img/img-4.jpg" alt="">
-                            </div>
-                            <div class="sim-item-price-title">
-                                <strong>Judul karya</strong>
-                            </div>
-                            <div class="sim-description">
-                                <div class="sim-image-container description-item">
-                                    <div class="pp">
-                                        <img src="./assets/img/nft.jpg" alt="">
-                                    </div>
-                                    <div class="from-where">
-                                        <p>From</p>
-                                        <p>Crypto Punk</p>
-                                    </div>
-                                </div>
-                                <div class="price-container">
-                                    <p>Price</p>
-                                    <div>
-                                        <strong>5 ETH</strong>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>    
+                            
+                        </div>                       
 
-                        <a href="./product-page.html" class="similar-item">
-                            <div class="sim-image-container sim-image-container-product">
-                                <img src="./assets/img/img-1.jpg" alt="">
-                            </div>
-                            <div class="sim-item-price-title">
-                                <strong>Judul karya</strong>
-                            </div>
-                            <div class="sim-description">
-                                <div class="sim-image-container description-item">
-                                    <div class="pp">
-                                        <img src="./assets/img/nft.jpg" alt="">
-                                    </div>
-                                    <div class="from-where">
-                                        <p>From</p>
-                                        <p>Crypto Punk</p>
-                                    </div>
-                                </div>
-                                <div class="price-container">
-                                    <p>Price</p>
-                                    <div>
-                                        <strong>5 ETH</strong>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>                       
-                                          
-                        <a href="./product-page.html" class="similar-item">
+                        <style>
+                            .onsale{
+                                position: absolute;
+                                z-index: 1;
+                                bottom: 5%;
+                                right: 6%;
+                                background: rgba(28, 28, 28, 0.664);
+                                padding: .5rem;
+                                font-size: .8rem;
+                                border-radius: 5px;
+                            }
+                        </style>
+                        <div class="similar-item">
                             <div class="sim-image-container sim-image-container-product">
                                 <img src="./assets/img/img-2.jpg" alt="">
                             </div>
-                            <div class="sim-item-price-title">
-                                <strong>Judul karya</strong>
-                            </div>
+                            
                             <div class="sim-description">
                                 <div class="sim-image-container description-item">
                                     <div class="pp">
                                         <img src="./assets/img/nft.jpg" alt="">
                                     </div>
                                     <div class="from-where">
-                                        <p>From</p>
-                                        <p>Crypto Punk</p>
+                                        <strong><a class="c-green" href="./product-page.html">Judul Karya</a></strong>
+                                        <p class="from-account">Crypto Punk</p>
                                     </div>
                                 </div>
                                 <div class="price-container">
@@ -508,23 +308,26 @@
                                     </div>
                                 </div>
                             </div>
-                        </a>                       
+                            <div class="sim-description" style="border: none;">
+                                <button class="main-button open-make-offers-modal">
+                                    Make Offer
+                                </button>
+                             </div>
+                        </div>                       
                                           
-                        <a href="./product-page.html" class="similar-item">
+                        <div class="similar-item">
                             <div class="sim-image-container sim-image-container-product">
                                 <img src="./assets/img/img-3.jpg" alt="">
                             </div>
-                            <div class="sim-item-price-title">
-                                <strong>Judul karya</strong>
-                            </div>
+                            
                             <div class="sim-description">
                                 <div class="sim-image-container description-item">
                                     <div class="pp">
                                         <img src="./assets/img/nft.jpg" alt="">
                                     </div>
                                     <div class="from-where">
-                                        <p>From</p>
-                                        <p>Crypto Punk</p>
+                                        <strong><a class="c-green" href="./product-page.html">Judul Karya</a></strong>
+                                        <p class="from-account">Crypto Punk</p>
                                     </div>
                                 </div>
                                 <div class="price-container">
@@ -534,23 +337,75 @@
                                     </div>
                                 </div>
                             </div>
-                        </a>                       
+                            <div class="sim-description" style="border: none;">
+                                <button class="main-button open-make-offers-modal">
+                                    Make Offer
+                                </button>
+                             </div>
+                        </div>                       
                                           
-                        <a href="./product-page.html" class="similar-item">
+                        <div class="similar-item">
                             <div class="sim-image-container sim-image-container-product">
                                 <img src="./assets/img/img-4.jpg" alt="">
                             </div>
-                            <div class="sim-item-price-title">
-                                <strong>Judul karya</strong>
-                            </div>
+                            
                             <div class="sim-description">
                                 <div class="sim-image-container description-item">
                                     <div class="pp">
                                         <img src="./assets/img/nft.jpg" alt="">
                                     </div>
                                     <div class="from-where">
-                                        <p>From</p>
-                                        <p>Crypto Punk</p>
+                                        <strong><a class="c-green" href="./product-page.html">Judul Karya</a></strong>
+                                        <p class="from-account">Crypto Punk</p>
+                                    </div>
+                                </div>
+                                <div class="price-container">
+                                    <p>Price</p>
+                                    <div>
+                                        <strong>5 ETH</strong>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="sim-description">
+                                <div class="sim-image-container sim-sale">
+                                    <p class="from-account">Sale Remaining Time</p>
+                                    <div class="date-end">
+                                        <div>
+                                            <strong class="c-green">5</strong>
+                                            <p class="from-account">Hours</p>
+                                        </div>
+                                        <div>
+                                            <strong class="c-green">20</strong>
+                                            <p class="from-account">Minutes</p>
+                                        </div>
+                                        <div>
+                                            <strong class="c-green">5</strong>
+                                            <p class="from-account">Seconds</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sim-description" style="border: none;">
+                               <button class="main-button open-make-offers-modal">
+                                   Make Offer
+                               </button>
+                            </div>
+                        </div>                       
+                                    
+                        <div class="similar-item">
+                            <div class="sim-image-container sim-image-container-product">
+                                <img src="./assets/img/img-1.jpg" alt="">
+                            </div>
+                            
+                            <div class="sim-description">
+                                <div class="sim-image-container description-item">
+                                    <div class="pp">
+                                        <img src="./assets/img/nft.jpg" alt="">
+                                    </div>
+                                    <div class="from-where">
+                                        <strong><a class="c-green" href="./product-page.html">Judul Karya</a></strong>
+                                        <p class="from-account">Crypto Punk</p>
                                     </div>
                                 </div>
                                 <div class="price-container">
@@ -560,24 +415,230 @@
                                     </div>
                                 </div>
                             </div>
-                        </a>    
+                            <div class="sim-description" style="border: none;">
+                                <button class="main-button open-make-offers-modal">
+                                    Make Offer
+                                </button>
+                             </div>
+                        </div>                       
+                                          
+                        <div class="similar-item">
+                            <div class="sim-image-container sim-image-container-product">
+                                <img src="./assets/img/img-2.jpg" alt="">
+                            </div>
+                            
+                            <div class="sim-description">
+                                <div class="sim-image-container description-item">
+                                    <div class="pp">
+                                        <img src="./assets/img/nft.jpg" alt="">
+                                    </div>
+                                    <div class="from-where">
+                                        <strong><a class="c-green" href="./product-page.html">Judul Karya</a></strong>
+                                        <p class="from-account">Crypto Punk</p>
+                                    </div>
+                                </div>
+                                <div class="price-container">
+                                    <p>Price</p>
+                                    <div>
+                                        <strong>5 ETH</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sim-description" style="border: none;">
+                                <button class="main-button open-make-offers-modal">
+                                    Make Offer
+                                </button>
+                             </div>
+                        </div>                       
+                                          
+                        <div class="similar-item">
+                            <div class="sim-image-container sim-image-container-product">
+                                <img src="./assets/img/img-3.jpg" alt="">
+                            </div>
+                            
+                            <div class="sim-description">
+                                <div class="sim-image-container description-item">
+                                    <div class="pp">
+                                        <img src="./assets/img/nft.jpg" alt="">
+                                    </div>
+                                    <div class="from-where">
+                                        <strong><a class="c-green" href="./product-page.html">Judul Karya</a></strong>
+                                        <p class="from-account">Crypto Punk</p>
+                                    </div>
+                                </div>
+                                <div class="price-container">
+                                    <p>Price</p>
+                                    <div>
+                                        <strong>5 ETH</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sim-description" style="border: none;">
+                                <button class="main-button open-make-offers-modal">
+                                    Make Offer
+                                </button>
+                             </div>
+                        </div>                       
+                                          
+                        <div class="similar-item">
+                            <div class="sim-image-container sim-image-container-product">
+                                <img src="./assets/img/img-4.jpg" alt="">
+                            </div>
+                            
+                            <div class="sim-description">
+                                <div class="sim-image-container description-item">
+                                    <div class="pp">
+                                        <img src="./assets/img/nft.jpg" alt="">
+                                    </div>
+                                    <div class="from-where">
+                                        <strong><a class="c-green" href="./product-page.html">Judul Karya</a></strong>
+                                        <p class="from-account">Crypto Punk</p>
+                                    </div>
+                                </div>
+                                <div class="price-container">
+                                    <p>Price</p>
+                                    <div>
+                                        <strong>5 ETH</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sim-description" style="border: none;">
+                                <button class="main-button open-make-offers-modal">
+                                    Make Offer
+                                </button>
+                             </div>
+                        </div>    
+
+                        <div class="similar-item">
+                            <div class="sim-image-container sim-image-container-product">
+                                <img src="./assets/img/img-1.jpg" alt="">
+                            </div>
+                            
+                            <div class="sim-description">
+                                <div class="sim-image-container description-item">
+                                    <div class="pp">
+                                        <img src="./assets/img/nft.jpg" alt="">
+                                    </div>
+                                    <div class="from-where">
+                                        <strong><a class="c-green" href="./product-page.html">Judul Karya</a></strong>
+                                        <p class="from-account">Crypto Punk</p>
+                                    </div>
+                                </div>
+                                <div class="price-container">
+                                    <p>Price</p>
+                                    <div>
+                                        <strong>5 ETH</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sim-description" style="border: none;">
+                                <button class="main-button open-make-offers-modal">
+                                    Make Offer
+                                </button>
+                             </div>
+                        </div>                       
+                                          
+                        <div class="similar-item">
+                            <div class="sim-image-container sim-image-container-product">
+                                <img src="./assets/img/img-2.jpg" alt="">
+                            </div>
+                            
+                            <div class="sim-description">
+                                <div class="sim-image-container description-item">
+                                    <div class="pp">
+                                        <img src="./assets/img/nft.jpg" alt="">
+                                    </div>
+                                    <div class="from-where">
+                                        <strong><a class="c-green" href="./product-page.html">Judul Karya</a></strong>
+                                        <p class="from-account">Crypto Punk</p>
+                                    </div>
+                                </div>
+                                <div class="price-container">
+                                    <p>Price</p>
+                                    <div>
+                                        <strong>5 ETH</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sim-description" style="border: none;">
+                                <button class="main-button open-make-offers-modal">
+                                    Make Offer
+                                </button>
+                             </div>
+                        </div>                       
+                                          
+                        <div class="similar-item">
+                            <div class="sim-image-container sim-image-container-product">
+                                <img src="./assets/img/img-3.jpg" alt="">
+                            </div>
+                            
+                            <div class="sim-description">
+                                <div class="sim-image-container description-item">
+                                    <div class="pp">
+                                        <img src="./assets/img/nft.jpg" alt="">
+                                    </div>
+                                    <div class="from-where">
+                                        <strong><a class="c-green" href="./product-page.html">Judul Karya</a></strong>
+                                        <p class="from-account">Crypto Punk</p>
+                                    </div>
+                                </div>
+                                <div class="price-container">
+                                    <p>Price</p>
+                                    <div>
+                                        <strong>5 ETH</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sim-description" style="border: none;">
+                                <button class="main-button open-make-offers-modal">
+                                    Make Offer
+                                </button>
+                             </div>
+                        </div>                       
+                                          
+                        <div class="similar-item">
+                            <div class="sim-image-container sim-image-container-product">
+                                <img src="./assets/img/img-4.jpg" alt="">
+                            </div>
+                            
+                            <div class="sim-description">
+                                <div class="sim-image-container description-item">
+                                    <div class="pp">
+                                        <img src="./assets/img/nft.jpg" alt="">
+                                    </div>
+                                    <div class="from-where">
+                                        <strong><a class="c-green" href="./product-page.html">Judul Karya</a></strong>
+                                        <p class="from-account">Crypto Punk</p>
+                                    </div>
+                                </div>
+                                <div class="price-container">
+                                    <p>Price</p>
+                                    <div>
+                                        <strong>5 ETH</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sim-description" style="border: none;">
+                                <button class="main-button open-make-offers-modal">
+                                    Make Offer
+                                </button>
+                             </div>
+                        </div>    
                                   
                         
-                        <a href="./product-page.html" class="similar-item">
+                        <div class="similar-item">
                             <div class="sim-image-container sim-image-container-product">
                                 <img src="./assets/img/img-3.jpg" alt="">
                             </div>
-                            <div class="sim-item-price-title">
-                                <strong>Judul karya</strong>
-                            </div>
+                            
                             <div class="sim-description">
                                 <div class="sim-image-container description-item">
                                     <div class="pp">
                                         <img src="./assets/img/nft.jpg" alt="">
                                     </div>
                                     <div class="from-where">
-                                        <p>From</p>
-                                        <p>Crypto Punk</p>
+                                        <strong><a class="c-green" href="./product-page.html">Judul Karya</a></strong>
+                                        <p class="from-account">Crypto Punk</p>
                                     </div>
                                 </div>
                                 <div class="price-container">
@@ -587,23 +648,26 @@
                                     </div>
                                 </div>
                             </div>
-                        </a>                       
+                            <div class="sim-description" style="border: none;">
+                                <button class="main-button open-make-offers-modal">
+                                    Make Offer
+                                </button>
+                             </div>
+                        </div>                       
                                           
-                        <a href="./product-page.html" class="similar-item">
+                        <div class="similar-item">
                             <div class="sim-image-container sim-image-container-product">
                                 <img src="./assets/img/img-4.jpg" alt="">
                             </div>
-                            <div class="sim-item-price-title">
-                                <strong>Judul karya</strong>
-                            </div>
+                            
                             <div class="sim-description">
                                 <div class="sim-image-container description-item">
                                     <div class="pp">
                                         <img src="./assets/img/nft.jpg" alt="">
                                     </div>
                                     <div class="from-where">
-                                        <p>From</p>
-                                        <p>Crypto Punk</p>
+                                        <strong><a class="c-green" href="./product-page.html">Judul Karya</a></strong>
+                                        <p class="from-account">Crypto Punk</p>
                                     </div>
                                 </div>
                                 <div class="price-container">
@@ -613,23 +677,26 @@
                                     </div>
                                 </div>
                             </div>
-                        </a>                       
+                            <div class="sim-description" style="border: none;">
+                                <button class="main-button open-make-offers-modal">
+                                    Make Offer
+                                </button>
+                             </div>
+                        </div>                       
                                     
-                        <a href="./product-page.html" class="similar-item">
+                        <div class="similar-item">
                             <div class="sim-image-container sim-image-container-product">
                                 <img src="./assets/img/img-1.jpg" alt="">
                             </div>
-                            <div class="sim-item-price-title">
-                                <strong>Judul karya</strong>
-                            </div>
+                            
                             <div class="sim-description">
                                 <div class="sim-image-container description-item">
                                     <div class="pp">
                                         <img src="./assets/img/nft.jpg" alt="">
                                     </div>
                                     <div class="from-where">
-                                        <p>From</p>
-                                        <p>Crypto Punk</p>
+                                        <strong><a class="c-green" href="./product-page.html">Judul Karya</a></strong>
+                                        <p class="from-account">Crypto Punk</p>
                                     </div>
                                 </div>
                                 <div class="price-container">
@@ -639,23 +706,26 @@
                                     </div>
                                 </div>
                             </div>
-                        </a>                       
+                            <div class="sim-description" style="border: none;">
+                                <button class="main-button open-make-offers-modal">
+                                    Make Offer
+                                </button>
+                             </div>
+                        </div>                       
                                           
-                        <a href="./product-page.html" class="similar-item">
+                        <div class="similar-item">
                             <div class="sim-image-container sim-image-container-product">
                                 <img src="./assets/img/img-2.jpg" alt="">
                             </div>
-                            <div class="sim-item-price-title">
-                                <strong>Judul karya</strong>
-                            </div>
+                            
                             <div class="sim-description">
                                 <div class="sim-image-container description-item">
                                     <div class="pp">
                                         <img src="./assets/img/nft.jpg" alt="">
                                     </div>
                                     <div class="from-where">
-                                        <p>From</p>
-                                        <p>Crypto Punk</p>
+                                        <strong><a class="c-green" href="./product-page.html">Judul Karya</a></strong>
+                                        <p class="from-account">Crypto Punk</p>
                                     </div>
                                 </div>
                                 <div class="price-container">
@@ -665,23 +735,26 @@
                                     </div>
                                 </div>
                             </div>
-                        </a>                       
+                            <div class="sim-description" style="border: none;">
+                                <button class="main-button open-make-offers-modal">
+                                    Make Offer
+                                </button>
+                             </div>
+                        </div>                       
                                           
-                        <a href="./product-page.html" class="similar-item">
+                        <div class="similar-item">
                             <div class="sim-image-container sim-image-container-product">
                                 <img src="./assets/img/img-3.jpg" alt="">
                             </div>
-                            <div class="sim-item-price-title">
-                                <strong>Judul karya</strong>
-                            </div>
+                            
                             <div class="sim-description">
                                 <div class="sim-image-container description-item">
                                     <div class="pp">
                                         <img src="./assets/img/nft.jpg" alt="">
                                     </div>
                                     <div class="from-where">
-                                        <p>From</p>
-                                        <p>Crypto Punk</p>
+                                        <strong><a class="c-green" href="./product-page.html">Judul Karya</a></strong>
+                                        <p class="from-account">Crypto Punk</p>
                                     </div>
                                 </div>
                                 <div class="price-container">
@@ -691,23 +764,26 @@
                                     </div>
                                 </div>
                             </div>
-                        </a>                       
+                            <div class="sim-description" style="border: none;">
+                                <button class="main-button open-make-offers-modal">
+                                    Make Offer
+                                </button>
+                             </div>
+                        </div>                       
                                           
-                        <a href="./product-page.html" class="similar-item">
+                        <div class="similar-item">
                             <div class="sim-image-container sim-image-container-product">
                                 <img src="./assets/img/img-4.jpg" alt="">
                             </div>
-                            <div class="sim-item-price-title">
-                                <strong>Judul karya</strong>
-                            </div>
+                            
                             <div class="sim-description">
                                 <div class="sim-image-container description-item">
                                     <div class="pp">
                                         <img src="./assets/img/nft.jpg" alt="">
                                     </div>
                                     <div class="from-where">
-                                        <p>From</p>
-                                        <p>Crypto Punk</p>
+                                        <strong><a class="c-green" href="./product-page.html">Judul Karya</a></strong>
+                                        <p class="from-account">Crypto Punk</p>
                                     </div>
                                 </div>
                                 <div class="price-container">
@@ -717,23 +793,26 @@
                                     </div>
                                 </div>
                             </div>
-                        </a>    
+                            <div class="sim-description" style="border: none;">
+                                <button class="main-button open-make-offers-modal">
+                                    Make Offer
+                                </button>
+                             </div>
+                        </div>    
 
-                        <a href="./product-page.html" class="similar-item">
+                        <div class="similar-item">
                             <div class="sim-image-container sim-image-container-product">
                                 <img src="./assets/img/img-1.jpg" alt="">
                             </div>
-                            <div class="sim-item-price-title">
-                                <strong>Judul karya</strong>
-                            </div>
+                            
                             <div class="sim-description">
                                 <div class="sim-image-container description-item">
                                     <div class="pp">
                                         <img src="./assets/img/nft.jpg" alt="">
                                     </div>
                                     <div class="from-where">
-                                        <p>From</p>
-                                        <p>Crypto Punk</p>
+                                        <strong><a class="c-green" href="./product-page.html">Judul Karya</a></strong>
+                                        <p class="from-account">Crypto Punk</p>
                                     </div>
                                 </div>
                                 <div class="price-container">
@@ -743,23 +822,26 @@
                                     </div>
                                 </div>
                             </div>
-                        </a>                       
+                            <div class="sim-description" style="border: none;">
+                                <button class="main-button open-make-offers-modal">
+                                    Make Offer
+                                </button>
+                             </div>
+                        </div>                       
                                           
-                        <a href="./product-page.html" class="similar-item">
+                        <div class="similar-item">
                             <div class="sim-image-container sim-image-container-product">
                                 <img src="./assets/img/img-2.jpg" alt="">
                             </div>
-                            <div class="sim-item-price-title">
-                                <strong>Judul karya</strong>
-                            </div>
+                            
                             <div class="sim-description">
                                 <div class="sim-image-container description-item">
                                     <div class="pp">
                                         <img src="./assets/img/nft.jpg" alt="">
                                     </div>
                                     <div class="from-where">
-                                        <p>From</p>
-                                        <p>Crypto Punk</p>
+                                        <strong><a class="c-green" href="./product-page.html">Judul Karya</a></strong>
+                                        <p class="from-account">Crypto Punk</p>
                                     </div>
                                 </div>
                                 <div class="price-container">
@@ -769,23 +851,26 @@
                                     </div>
                                 </div>
                             </div>
-                        </a>                       
+                            <div class="sim-description" style="border: none;">
+                                <button class="main-button open-make-offers-modal">
+                                    Make Offer
+                                </button>
+                             </div>
+                        </div>                       
                                           
-                        <a href="./product-page.html" class="similar-item">
+                        <div class="similar-item">
                             <div class="sim-image-container sim-image-container-product">
                                 <img src="./assets/img/img-3.jpg" alt="">
                             </div>
-                            <div class="sim-item-price-title">
-                                <strong>Judul karya</strong>
-                            </div>
+                            
                             <div class="sim-description">
                                 <div class="sim-image-container description-item">
                                     <div class="pp">
                                         <img src="./assets/img/nft.jpg" alt="">
                                     </div>
                                     <div class="from-where">
-                                        <p>From</p>
-                                        <p>Crypto Punk</p>
+                                        <strong><a class="c-green" href="./product-page.html">Judul Karya</a></strong>
+                                        <p class="from-account">Crypto Punk</p>
                                     </div>
                                 </div>
                                 <div class="price-container">
@@ -795,23 +880,26 @@
                                     </div>
                                 </div>
                             </div>
-                        </a>                       
+                            <div class="sim-description" style="border: none;">
+                                <button class="main-button open-make-offers-modal">
+                                    Make Offer
+                                </button>
+                             </div>
+                        </div>                       
                                           
-                        <a href="./product-page.html" class="similar-item">
+                        <div class="similar-item">
                             <div class="sim-image-container sim-image-container-product">
                                 <img src="./assets/img/img-4.jpg" alt="">
                             </div>
-                            <div class="sim-item-price-title">
-                                <strong>Judul karya</strong>
-                            </div>
+                            
                             <div class="sim-description">
                                 <div class="sim-image-container description-item">
                                     <div class="pp">
                                         <img src="./assets/img/nft.jpg" alt="">
                                     </div>
                                     <div class="from-where">
-                                        <p>From</p>
-                                        <p>Crypto Punk</p>
+                                        <strong><a class="c-green" href="./product-page.html">Judul Karya</a></strong>
+                                        <p class="from-account">Crypto Punk</p>
                                     </div>
                                 </div>
                                 <div class="price-container">
@@ -821,7 +909,12 @@
                                     </div>
                                 </div>
                             </div>
-                        </a>   
+                            <div class="sim-description" style="border: none;">
+                                <button class="main-button open-make-offers-modal">
+                                    Make Offer
+                                </button>
+                             </div>
+                        </div>   
                     </div>
                 </div>
             </section>
@@ -833,16 +926,16 @@
                 #discover-collection{
                     min-height: 20rem;
                     display: grid;
-                    margin-top: 2rem;
+                    margin-top: 1rem;
                     grid-template-columns: 2fr .8fr;
                     grid-gap: .5rem;
                 }
                 #discover-collection > div{
-                    background: #222222;
+                    background: #181818;
                     border-radius: 10px;
                 }
                 #discover-collection > div:first-child{
-                    background: #222222;
+                    background: #181818;
                 }
                 .poster{
                     padding: 1rem 2rem;
@@ -940,7 +1033,107 @@
                     border-radius: 20px;
                 }
             </style>
-            
+
+            <div class="make-offer-to-item-page">
+                <div class="items-title-buy">
+                    <h2 style="text-align: center;">Item Offers</h2>
+                </div>
+                <form class="items-detail">
+                    <div class="inner-items-detail">
+                        <strong>Price</strong>
+                        <div class="price-img">
+                            <img src="./assets/img/eth-icon.png" alt="">
+                            <span>10</span>
+                        </div>
+                    </div>
+                    <div class="make-offer-desc">
+                        <strong style="margin-bottom: 1rem;">Make offers</strong>
+                        <div>
+                            <label for="input-price-item">
+                                <img src="./assets/img/eth-icon.png" alt="">
+                                <p>ETH</p>
+                            </label>
+                            <input id="input-price-item" type="number" placeholder="Input price" required>
+                        </div>
+                    </div>
+                    <div class="wallet-balance">
+                        <div>
+                            <strong>Balance: </strong>
+                            <div class="price-img">
+                                <img src="./assets/img/eth-icon.png" alt="">
+                                <p>50</p>
+                            </div>
+                        </div>
+                        <div style="margin-top: 1rem; display: flex; flex-direction: column; align-items: flex-start;">
+                            <strong>Offer Expiration</strong>
+                            <div style="margin-top: .5rem; display: flex; justify-content: space-between;width: 100%;">
+                                <div style="position: relative; width: 48%;">
+                                    <div class="offers-time-openner">
+                                        <p id="offers-time">Choose time</p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                          </svg>
+                                    </div>
+                                    <div class="time-container">
+                                        <button>1 Days</button>
+                                        <button>3 Days</button>
+                                        <button>7 Days</button>
+                                        <button>1 Month</button>
+                                    </div>
+                                </div>
+                                <div style="position: relative; width: 48%;">
+                                    <div class="" style="height: 100%;">
+                                        <input type="time" id="appt"  required>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="confirm-box">
+                        <div>
+                            <input type="checkbox" id="confirm-1" required>
+                            <label for="confirm-1">By checking this box, I acknowledge that this bundle contains an item that has not been reviewed or approved by NFTroops.</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="confirm-2" required>
+                            <label for="confirm-2">By checking this box, I agree to NFTroops's Terms of Service</label>
+                        </div>
+    
+                    </div>
+
+                    <div class="submit-outer">
+                        <button type="submit" class="cancel-inner">Cancel Offer</button>
+                        <button type="submit" class="submit-inner">Make Offer</button>
+                    </div>
+                    <style>
+                        input[type="checkbox"]{
+                            position: relative;
+                            outline: none;
+                            border: none;
+                        }
+                        input[type="checkbox"]::after{
+                            content: '';
+                            position: absolute;
+                            background: rgb(90, 90, 90);
+                            border-radius: 2px;
+                            width: 100%;
+                            height: 100%;
+                            left: -10%;
+                            top: -10%;
+                            padding: .2rem;
+
+                        }
+                        input[type="checkbox"]:checked:after{
+                            background: rgb(20, 186, 114);
+
+                        }
+                        .confirm-box > div> label{
+                            margin-left: 1rem;
+                        }
+                    </style>
+                </form>
+            </div>
 
             <footer class="section-container">
                 <div class="foot-top">
@@ -1000,9 +1193,9 @@
                     </div>
                 </div>
             </footer>
+            <div class="outside"></div>
         </div>
         
-        <div class="outside"></div>
         <style>
             .accordion-box > p{
                 color: white;
@@ -1078,6 +1271,45 @@
                     }
                 }
             }
+
+            let openMakeOffersModal = document.getElementsByClassName('open-make-offers-modal')
+            let makeOfferToItemPage = document.getElementsByClassName('make-offer-to-item-page')[0]
+            let cancelInner = document.getElementsByClassName('cancel-inner')[0]
+            for(let i =0; i < openMakeOffersModal.length; i++){
+                openMakeOffersModal[i].addEventListener('click', () => {
+                makeOfferToItemPage.classList.add('open-modal')
+                outside.style.opacity = '1'
+                outside.style.zIndex = '9'
+                })
+            }
+           
+            outside.addEventListener('click', () => {
+                if(makeOfferToItemPage.classList.contains('open-modal')){
+                    outside.style.opacity = ''
+                    outside.style.zIndex = ''
+                    makeOfferToItemPage.classList.remove('open-modal')
+                }
+            })
+            
+            cancelInner.addEventListener('click', () => {
+                outside.style.opacity = ''
+                outside.style.zIndex = ''
+                makeOfferToItemPage.classList.remove('open-modal')
+            })
+
+            let offerTime = document.getElementById('offers-time')
+            let timeContainer = document.getElementsByClassName('time-container')[0]
+            let offersTimeOpenner = document.getElementsByClassName('offers-time-openner')[0]        
+
+            for(let i = 0; i < timeContainer.children.length; i++){
+                timeContainer.children[i].addEventListener('click', () => {
+                    offerTime.innerHTML = timeContainer.children[i].innerHTML
+                    timeContainer.classList.remove('open-modal')
+                })
+            }
+            offersTimeOpenner.addEventListener('click', () => {
+                timeContainer.classList.toggle('open-modal')
+            })
         </script>
     </body>
 </html>

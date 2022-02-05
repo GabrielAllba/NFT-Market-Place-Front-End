@@ -10,7 +10,7 @@ hamburgerContainer.addEventListener('click', () => {
         menuOpen = true;
         mainNavbar.style.right = '-5%'
         outside.style.opacity = '1'
-        outside.style.zIndex = '0'
+        outside.style.zIndex = '9'
     }
     else{
         openList.classList.remove('opened')

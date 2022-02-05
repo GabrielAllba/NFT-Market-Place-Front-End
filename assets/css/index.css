@@ -69,7 +69,7 @@ nav{
     top: 0;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
+    z-index: 9999;
     color: white;
     background: #141316;
     border-bottom: 1px solid rgb(61, 61, 61);
@@ -146,8 +146,13 @@ form button svg{
 }
 
 #search{
-    background: #222222;
     background: none;
+    background: #141316;
+}
+input:-internal-autofill-previewed,
+input:-internal-autofill-selected{
+    box-shadow: 0 0 0 30px #141316 inset !important;
+    -webkit-text-fill-color: white;
 }
 ::placeholder {
     color: rgb(104, 104, 104);
@@ -180,8 +185,9 @@ form button svg{
     top: 100%;
     width: 12rem;
     left: 0;
+    border: 1px solid rgb(46, 46, 46);
     border-radius: 5px;
-    background: #242424;
+    background: #141316;
     transition: .2s ease-in-out;
     padding: 0;
     pointer-events: none;
@@ -290,9 +296,7 @@ form button svg{
         /* display: flex;
         flex-direction: column;
         justify-content: center; */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        display: block;
         position: fixed;
         top:4.5rem;
         height: 70%;
@@ -330,7 +334,7 @@ form button svg{
         margin-top: 1rem;
     }
     .dropdown{
-        display: flex;
+        display: block;
         opacity: 0;
         transform: translateY(0px) translateX(100px);
         flex-direction: column;
@@ -341,6 +345,7 @@ form button svg{
         box-shadow: none;
         background: #121619;
         pointer-events: none;
+        border: none;
     }
     .dropdown-link > a{
         padding-left: 0;
@@ -565,14 +570,20 @@ svg{
     margin-left: .5rem;
 }
 
-.min-bid > button{
-    background: #10d3a9;
+.main-button,
+.outer-button{
+    background: #2ca879;
     border: none;
     padding: .5rem 2rem;
     color: white;
     margin-top: .5rem;
-    border-radius: 8px;
+    border-radius: 5px;
     cursor: pointer;
+}
+.outer-button{
+    background: none;
+    border: 1px solid rgb(61, 61, 61);
+    color: #2ca879;
 }
 .min-bid > div{
     margin: .2rem 0;
@@ -716,11 +727,35 @@ table tr:first-child th{
         display: flex;
         justify-content: center;
     }
+    .from-account{
+        color: rgb(155, 155, 155);
+        font-size: .9rem;
+    }
     .sim-image-container > img,
     .from-where > img{
         width: 100%;
         height: auto;
         border-radius: 10px;
+    }
+    .sim-sale,
+    .sim-button{
+        display: flex;
+        flex-direction: column;
+    }
+    .sim-button{
+        flex-direction: row;
+    }
+    .date-end{
+        display: flex;
+        justify-content: space-between;
+    }
+    .date-end > div{
+        display: flex;
+        margin: .5rem;
+        flex-direction: column;
+    }
+    .date-end > div > strong{
+        margin-bottom: .2rem;
     }
     .sim-image-container > .pp{
         max-width: 100%;
@@ -741,19 +776,25 @@ table tr:first-child th{
     .sim-image-container-product{
         min-height: 10rem;
         overflow:hidden;
+        position: relative;
     }
     .similar-content{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 10px;
     }
-    
+    .sim-image-container-product > img{
+        z-index: 1;
+    }
     .similar-item{
         border-radius: 10px;
         transition: .2s ease-in-out;
         color: white;
-        background: #222222;
+        background: #181818;
         padding: 1rem;
+        height: max-content;
+        position: relative;
+        overflow: hidden;
     }
     .sim-description,
     .sim-item-price-title{
@@ -763,6 +804,9 @@ table tr:first-child th{
   }
   .sim-description{
       justify-content: space-between;
+      border: 1px solid rgb(49, 49, 49);
+      margin-top: .5rem;
+      padding: .5rem;
   }
   .sim-item-price-title{
       padding-bottom: 0;
@@ -780,22 +824,96 @@ table tr:first-child th{
       display: flex;
       align-items: center;
   }
+  .price-container > div >strong{
+      color:#10d3a9;
+  }
 
   .sim-description > div > p{
-      color: rgb(197, 197, 197);
+      color: rgb(155, 155, 155);
   }
   .from-where{
       color: white;
       margin-left: .5rem;
   }
+ 
   .from-where > p:first-child{
       color: rgb(187, 187, 187);
   }
-  .similar-item:hover{
-      transform: translateY(-1%);
-      transition: .2s ease-in-out;
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  }
+  #discover-collection .trending{
+    padding: .2rem;
+    background: none;
+    overflow: hidden;
+}
+.trending,
+.trending-container{
+    display: flex;
+    position: relative;
+}
+.trending-item{
+    position: relative;
+}
+.trending-tag > p{
+    font-family: 'Montserrat-Bold';
+    padding: .5rem 1rem;
+    background: yellow;
+    z-index: 1;
+    color: black;
+    width: 160%;
+    font-size: 1rem;
+    left: 0;
+    top: 0;
+    transform: rotate(-45deg) translateX(-30%) translateY(-60%);
+    position: absolute;
+}
+.trending-tag::after{
+    content: '';
+    background: rgb(135, 135, 4);
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    left:-10%;
+    bottom: -11%;
+}
+.trending-tag::before{
+    content: '';
+    background: rgb(135, 135, 4);
+    width: 20px;
+    height: 20px;
+    top: -2%;
+    position: absolute;
+    right: 1%;
+}
+.trending-tag{
+    left: 0%;
+    width: 120px;
+    height: 120px;
+    top:0%;
+    position: absolute;
+    padding: .5rem 1rem;
+    text-align: center;
+}
+.trending::before{
+    content: '';
+    position: absolute;
+    width: 185%;
+    height: 185%;
+    left: -50%;
+    top: -50%;
+    background: conic-gradient(from 90deg, rgb(0 0 0/ 0%) 80%, rgba(10, 120, 223, 0.659) 0%, #2ca879 100%);
+    animation: rotate 4s infinite linear;
+}
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+} 
+
+.trending > a.similar-item:hover{
+    transform: translateY(0);
+}
+.trending .sim-item-price-title strong{
+    font-size: 1rem;
+}
   strong{
       font-family: 'Montserrat-Bold';
   }
@@ -807,12 +925,12 @@ table tr:first-child th{
           grid-template-columns: 1fr 1fr 1fr;
       }
   }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 980px) {
       .similar-content{
           grid-template-columns: 1fr 1fr ; 
         }
     }
-    @media only screen and (max-width: 576px) {
+    @media only screen and (max-width: 690px) {
         .similar-content{
           grid-template-columns: 1fr ; 
       }
@@ -902,7 +1020,7 @@ footer form input[type='submit']:hover{
     content: '';
     width: 100%;
     height: 1px;
-    background-color: #222222;
+    background-color: #181818;
     position: absolute;
     top: 0;
     left: 0;
@@ -969,7 +1087,7 @@ footer form input[type='submit']:hover{
     padding: .5rem 2rem;
     margin: .3rem;
     border-radius: 10px;
-    background: #222222;
+    background: #181818;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1100,8 +1218,9 @@ footer form input[type='submit']:hover{
     top: 0;
     left: 0;
     height: 100vh;
+    z-index: 2;
     overflow: auto;
-    background: #222222;
+    background: #181818;
 }
 
 img[src="./assets/img/eth-icon.png"]{
@@ -1119,7 +1238,7 @@ img[src="./assets/img/eth-icon.png"]{
     padding: 1rem;
 }
 .filter-page > div > ul > .accordion-container > .accordion-detail{
-    background-color: #2b2b2b;
+    background-color: #181818;
     padding: 1rem;
     padding-left: .2rem;
     color: white;
@@ -1200,7 +1319,7 @@ input[type=number]::-webkit-outer-spin-button {
     margin: .3rem;
     border-radius: 5px;
     cursor: pointer;
-    background: #333333;
+    background: #222222;
     width: 100%;
     color: rgb(233, 233, 233);
     transition: .2s ease-in-out;
